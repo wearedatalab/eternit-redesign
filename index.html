@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternit Colombia — Soluciones Integrales para la Construcción</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <img src="logo.png" alt="Eternit" class="loader-logo-img">
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="logo.png" alt="Eternit" class="nav-logo-img nav-logo-light">
+                <img src="logo.png" alt="Eternit" class="nav-logo-img nav-logo-dark">
+            </a>
+
+            <div class="nav-menu" id="navMenu">
+                <div class="nav-dropdown">
+                    <a href="#inicio" class="nav-link active">Inicio <i class="ri-arrow-down-s-line"></i></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="index.html" class="active-item"><i class="ri-layout-4-line"></i> Home 1</a>
+                        <a href="index2.html"><i class="ri-layout-masonry-line"></i> Home 2</a>
+                    </div>
+                </div>
+                <a href="#soluciones" class="nav-link">Soluciones</a>
+                <a href="#sostenibilidad" class="nav-link">Sostenibilidad</a>
+                <a href="#presencia" class="nav-link">Presencia</a>
+                <a href="#noticias" class="nav-link">Noticias</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+
+            <div class="nav-actions">
+                <div class="nav-socials">
+                    <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+                </div>
+                <a href="#contacto" class="nav-cta">Cotizar</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#inicio" class="mobile-link">Inicio</a>
+            <a href="#soluciones" class="mobile-link">Soluciones</a>
+            <a href="#sostenibilidad" class="mobile-link">Sostenibilidad</a>
+            <a href="#presencia" class="mobile-link">Presencia</a>
+            <a href="#noticias" class="mobile-link">Noticias</a>
+            <a href="#contacto" class="mobile-link">Contacto</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80" alt="" class="hero-bg-img">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge" data-animate>
+                <i class="ri-leaf-line"></i>
+                <span>Comprometidos con la sostenibilidad</span>
+            </div>
+            <h1 class="hero-title" data-animate>
+                Construimos el<br>
+                <span class="hero-highlight">futuro</span> de<br>
+                Colombia
+            </h1>
+            <p class="hero-subtitle" data-animate>
+                Más de 80 años liderando soluciones innovadoras y sostenibles
+                para la industria de la construcción.
+            </p>
+            <div class="hero-actions" data-animate>
+                <a href="#soluciones" class="btn btn-primary">
+                    Explorar soluciones
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+                <a href="#presencia" class="btn btn-outline">
+                    Conocer más
+                </a>
+            </div>
+            <div class="hero-stats" data-animate>
+                <div class="stat">
+                    <span class="stat-number" data-count="80">0</span>
+                    <span class="stat-label">Años de<br>experiencia</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="3">0</span>
+                    <span class="stat-label">Plantas<br>estratégicas</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="500">0</span>
+                    <span class="stat-label">Productos<br>disponibles</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <div class="video-grid">
+                <div class="video-text" data-animate>
+                    <span class="section-tag">Conócenos</span>
+                    <h2 class="video-heading">Más de <span class="text-accent">80 años</span> liderando la industria de la construcción</h2>
+                    <p class="video-desc">Desde 1942, Eternit Colombia ha sido sinónimo de calidad, innovación y compromiso con el desarrollo del país. Nuestros productos están presentes en millones de hogares colombianos.</p>
+                    <div class="video-highlights">
+                        <div class="video-highlight">
+                            <i class="ri-award-line"></i>
+                            <span>Líder en fibrocemento</span>
+                        </div>
+                        <div class="video-highlight">
+                            <i class="ri-shield-check-line"></i>
+                            <span>Calidad certificada</span>
+                        </div>
+                        <div class="video-highlight">
+                            <i class="ri-leaf-line"></i>
+                            <span>Compromiso sostenible</span>
+                        </div>
+                    </div>
+                    <a href="#soluciones" class="btn btn-primary">
+                        Explorar soluciones <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+                <div class="video-player" data-animate>
+                    <div class="video-wrapper">
+                        <div class="video-thumbnail" id="videoThumb">
+                            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80" alt="Eternit Colombia" class="video-thumb-img">
+                            <div class="video-overlay"></div>
+                            <button class="video-play-btn" id="videoPlayBtn" aria-label="Reproducir video">
+                                <i class="ri-play-fill"></i>
+                            </button>
+                        </div>
+                        <div class="video-iframe-container" id="videoContainer" style="display:none;">
+                            <iframe id="videoIframe" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <button class="video-close-btn" id="videoCloseBtn" aria-label="Cerrar video">
+                                <i class="ri-close-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="solutions" id="soluciones">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Soluciones Integrales</span>
+                <h2 class="section-title">Todo lo que necesitas para construir</h2>
+                <p class="section-desc">Ofrecemos un portafolio completo de soluciones para cada etapa de tu proyecto de construcción.</p>
+            </div>
+
+            <div class="solutions-grid">
+                <div class="solution-card" data-animate>
+                    <div class="solution-card-img">
+                        <img src="https://images.unsplash.com/photo-1632759145351-1d592919f522?w=600&q=80" alt="Cubiertas" loading="lazy">
+                    </div>
+                    <div class="solution-card-body">
+                        <div class="solution-icon">
+                            <i class="ri-home-4-line"></i>
+                        </div>
+                        <div class="solution-number">01</div>
+                        <h3 class="solution-title">Cubiertas</h3>
+                        <p class="solution-desc">Tejas y sistemas de cubierta con la mejor tecnología para proteger tus espacios con durabilidad y estilo.</p>
+                        <a href="cubiertas.html" class="solution-link">
+                            Explorar <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="solution-card" data-animate>
+                    <div class="solution-card-img">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80" alt="Construcción" loading="lazy">
+                    </div>
+                    <div class="solution-card-body">
+                        <div class="solution-icon">
+                            <i class="ri-building-2-line"></i>
+                        </div>
+                        <div class="solution-number">02</div>
+                        <h3 class="solution-title">Construcción</h3>
+                        <p class="solution-desc">Placas y sistemas constructivos en fibrocemento para edificaciones eficientes y resistentes.</p>
+                        <a href="#" class="solution-link">
+                            Explorar <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="solution-card" data-animate>
+                    <div class="solution-card-img">
+                        <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600&q=80" alt="Agua" loading="lazy">
+                    </div>
+                    <div class="solution-card-body">
+                        <div class="solution-icon">
+                            <i class="ri-drop-line"></i>
+                        </div>
+                        <div class="solution-number">03</div>
+                        <h3 class="solution-title">Agua</h3>
+                        <p class="solution-desc">Tanques y soluciones para almacenamiento y conducción de agua con la más alta calidad.</p>
+                        <a href="#" class="solution-link">
+                            Explorar <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="solution-card" data-animate>
+                    <div class="solution-card-img">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=80" alt="Acabados" loading="lazy">
+                    </div>
+                    <div class="solution-card-body">
+                        <div class="solution-icon">
+                            <i class="ri-paint-brush-line"></i>
+                        </div>
+                        <div class="solution-number">04</div>
+                        <h3 class="solution-title">Acabados</h3>
+                        <p class="solution-desc">Soluciones de cielo raso y acabados arquitectónicos para espacios con diseño y funcionalidad.</p>
+                        <a href="#" class="solution-link">
+                            Explorar <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="productos">
+        <div class="container">
+            <div class="products-top" data-animate>
+                <div class="products-header">
+                    <span class="section-tag section-tag--light">Catálogo</span>
+                    <h2 class="section-title products-title">Nuestros Productos</h2>
+                </div>
+                <div class="products-nav">
+                    <button class="products-nav-btn" id="prodPrev" aria-label="Anterior"><i class="ri-arrow-left-s-line"></i></button>
+                    <button class="products-nav-btn" id="prodNext" aria-label="Siguiente"><i class="ri-arrow-right-s-line"></i></button>
+                </div>
+            </div>
+            <div class="products-carousel" data-animate>
+                <div class="products-track" id="productsTrack">
+                    <a href="#" class="product-chip">
+                        <div class="product-chip-img">
+                            <img src="https://www.eternit.com.co/wp-content/uploads/2022/08/Teja-P-7.jpeg" alt="Teja Ondulada P7" loading="lazy">
+                        </div>
+                        <h4>Teja Ondulada P7</h4>
+                        <span class="product-chip-link">Ver productos <i class="ri-arrow-right-line"></i></span>
+                    </a>
+                    <a href="cubiertas.html" class="product-chip">
+                        <div class="product-chip-img">
+                            <img src="https://www.eternit.com.co/wp-content/uploads/2022/08/CASA-Teja-P-7.jpeg" alt="Cubiertas" loading="lazy">
+                        </div>
+                        <h4>Cubiertas</h4>
+                        <span class="product-chip-link">Ver productos <i class="ri-arrow-right-line"></i></span>
+                    </a>
+                    <a href="#" class="product-chip">
+                        <div class="product-chip-img">
+                            <img src="https://www.eternit.com.co/wp-content/uploads/2022/08/Teja-P7-Plus.jpeg" alt="Teja P7 Plus" loading="lazy">
+                        </div>
+                        <h4>Teja P7 Plus</h4>
+                        <span class="product-chip-link">Ver productos <i class="ri-arrow-right-line"></i></span>
+                    </a>
+                    <a href="#" class="product-chip">
+                        <div class="product-chip-img">
+                            <img src="https://www.eternit.com.co/wp-content/uploads/2022/08/1_tanque_Eternit_azul_500L.jpeg" alt="Tanque Azul 500L" loading="lazy">
+                        </div>
+                        <h4>Tanques de Agua</h4>
+                        <span class="product-chip-link">Ver productos <i class="ri-arrow-right-line"></i></span>
+                    </a>
+                    <a href="#" class="product-chip">
+                        <div class="product-chip-img">
+                            <img src="https://www.eternit.com.co/wp-content/uploads/2022/08/1_tanque_eternit_1000L.jpeg" alt="Tanque 1000L" loading="lazy">
+                        </div>
+                        <h4>Tanque 1000L</h4>
+                        <span class="product-chip-link">Ver productos <i class="ri-arrow-right-line"></i></span>
+                    </a>
+                    <a href="#" class="product-chip">
+                        <div class="product-chip-img">
+                            <img src="https://www.eternit.com.co/wp-content/uploads/2022/08/1-Teja-sevillana-portada.jpeg" alt="Teja Sevillana" loading="lazy">
+                        </div>
+                        <h4>Teja Sevillana</h4>
+                        <span class="product-chip-link">Ver productos <i class="ri-arrow-right-line"></i></span>
+                    </a>
+                    <a href="#" class="product-chip">
+                        <div class="product-chip-img">
+                            <img src="https://www.eternit.com.co/wp-content/uploads/2022/08/1-Teja-de-PVC.jpeg" alt="Teja PVC" loading="lazy">
+                        </div>
+                        <h4>Tejas en PVC</h4>
+                        <span class="product-chip-link">Ver productos <i class="ri-arrow-right-line"></i></span>
+                    </a>
+                    <a href="#" class="product-chip">
+                        <div class="product-chip-img">
+                            <img src="https://www.eternit.com.co/wp-content/uploads/2022/08/1_tanque_eternit_2000L.jpeg" alt="Tanque 2000L" loading="lazy">
+                        </div>
+                        <h4>Tanque 2000L</h4>
+                        <span class="product-chip-link">Ver productos <i class="ri-arrow-right-line"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section class="sustainability" id="sostenibilidad">
+        <div class="sustainability-bg"></div>
+        <div class="container">
+            <div class="sustainability-grid">
+                <div class="sustainability-content" data-animate>
+                    <span class="section-tag section-tag--light">Sostenibilidad</span>
+                    <h2 class="sustainability-title">Construimos con responsabilidad hacia el planeta</h2>
+                    <p class="sustainability-desc">
+                        Nuestro compromiso con el medio ambiente se refleja en cada proceso productivo,
+                        desde la reducción de nuestra huella de carbono hasta proyectos de reintegración social.
+                    </p>
+                    <div class="sustainability-features">
+                        <div class="sustain-feature">
+                            <div class="sustain-icon"><i class="ri-footprint-line"></i></div>
+                            <div>
+                                <h4>Huella de Carbono</h4>
+                                <p>Medición y reducción constante de nuestro impacto ambiental</p>
+                            </div>
+                        </div>
+                        <div class="sustain-feature">
+                            <div class="sustain-icon"><i class="ri-global-line"></i></div>
+                            <div>
+                                <h4>Pacto Global</h4>
+                                <p>Adheridos a los principios del Pacto Global de las Naciones Unidas</p>
+                            </div>
+                        </div>
+                        <div class="sustain-feature">
+                            <div class="sustain-icon"><i class="ri-water-flash-line"></i></div>
+                            <div>
+                                <h4>Proyecto Hydros</h4>
+                                <p>Acceso al agua potable para comunidades vulnerables</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-light">
+                        Conocer nuestro impacto <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+                <div class="sustainability-visual" data-animate>
+                    <div class="sustain-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=700&q=80" alt="Sostenibilidad ambiental" class="sustain-image" loading="lazy">
+                        <div class="sustain-image-overlay">
+                            <div class="circle-center">
+                                <i class="ri-leaf-line"></i>
+                                <span>ECO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portals Section -->
+    <section class="portals" id="portales">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag section-tag--light">Portales de Acceso</span>
+                <h2 class="section-title portals-title">Accede a tu portal</h2>
+            </div>
+            <div class="portals-grid">
+                <a href="#" class="portal-card" data-animate>
+                    <div class="portal-icon"><i class="ri-truck-line"></i></div>
+                    <h3>Portal Proveedores</h3>
+                    <p>Canal ágil y seguro para nuestros proveedores estratégicos</p>
+                    <span class="portal-btn">Ingresar <i class="ri-arrow-right-line"></i></span>
+                </a>
+                <a href="#" class="portal-card" data-animate>
+                    <div class="portal-icon"><i class="ri-store-2-line"></i></div>
+                    <h3>Portal Distribuidores</h3>
+                    <p>Acceso exclusivo para clientes distribuidores autorizados</p>
+                    <span class="portal-btn">Ingresar <i class="ri-arrow-right-line"></i></span>
+                </a>
+                <a href="#" class="portal-card" data-animate>
+                    <div class="portal-icon"><i class="ri-layout-grid-line"></i></div>
+                    <h3>Eterboard</h3>
+                    <p>Sistemas de construcción en seco de alto rendimiento</p>
+                    <span class="portal-btn">Ingresar <i class="ri-arrow-right-line"></i></span>
+                </a>
+                <a href="#" class="portal-card" data-animate>
+                    <div class="portal-icon"><i class="ri-team-line"></i></div>
+                    <h3>Comunidad Maestros</h3>
+                    <p>Red de maestros de obra y capacitación continua</p>
+                    <span class="portal-btn">Ingresar <i class="ri-arrow-right-line"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presence Section -->
+    <section class="presence" id="presencia">
+        <div class="container">
+            <div class="presence-grid">
+                <div class="presence-map" data-animate>
+                    <div class="map-container">
+                        <svg viewBox="0 0 500 600" class="colombia-map" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="mapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#f0f0f0;stop-opacity:1"/>
+                                    <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1"/>
+                                </linearGradient>
+                                <filter id="mapShadow" x="-5%" y="-5%" width="110%" height="110%">
+                                    <feDropShadow dx="2" dy="4" stdDeviation="6" flood-color="#00000015"/>
+                                </filter>
+                            </defs>
+                            <!-- Accurate Colombia outline -->
+                            <path d="M168,28 L178,25 L190,22 L198,28 L205,35 L218,32 L228,28 L240,30 L248,36
+                                L252,45 L260,42 L270,48 L278,55 L290,52 L298,58 L305,65 L310,58 L318,55
+                                L328,60 L335,68 L340,78 L338,88 L342,98 L350,105 L358,100 L365,108 L368,118
+                                L372,128 L375,138 L370,148 L365,155 L358,162 L362,172 L368,180 L365,190
+                                L358,195 L352,188 L345,192 L338,200 L342,210 L348,218 L345,228 L340,238
+                                L335,248 L330,255 L328,265 L332,275 L336,285 L332,295 L325,302 L320,310
+                                L315,318 L318,328 L322,338 L318,348 L312,355 L305,360 L298,365 L292,372
+                                L285,378 L278,385 L272,392 L268,400 L262,408 L255,415 L248,420 L240,425
+                                L232,430 L225,438 L218,445 L210,450 L202,455 L195,460 L188,462 L180,458
+                                L172,452 L165,445 L158,438 L150,432 L142,428 L135,422 L128,415 L122,408
+                                L118,400 L112,392 L108,385 L105,375 L102,365 L98,355 L95,345 L92,335
+                                L90,325 L88,315 L90,305 L92,295 L88,285 L85,275 L82,265 L80,255 L78,245
+                                L80,235 L82,225 L78,215 L75,205 L72,195 L70,185 L72,175 L75,165 L78,155
+                                L82,145 L88,138 L95,130 L102,122 L108,115 L115,108 L118,98 L122,88 L128,80
+                                L135,72 L142,65 L148,58 L155,48 L162,38 L168,28Z"
+                                fill="url(#mapGrad)" stroke="var(--gray-300)" stroke-width="1.5" stroke-linejoin="round" filter="url(#mapShadow)" class="map-outline"/>
+
+                            <!-- Departamento borders (subtle internal lines) -->
+                            <g class="map-borders" opacity="0.15" stroke="var(--gray-500)" stroke-width="0.5" fill="none">
+                                <path d="M150,150 Q200,160 250,140"/>
+                                <path d="M120,220 Q180,200 240,220"/>
+                                <path d="M130,300 Q200,280 280,310"/>
+                                <path d="M180,180 L190,250 L160,320"/>
+                                <path d="M250,140 L270,200 L260,280"/>
+                            </g>
+
+                            <!-- Plant marker: Barranquilla / Atlántico (north coast) -->
+                            <g class="map-marker">
+                                <circle cx="268" cy="62" r="6" fill="var(--accent)" class="marker-dot"/>
+                                <circle cx="268" cy="62" r="6" fill="var(--accent)" opacity="0.4" class="pulse"/>
+                                <circle cx="268" cy="62" r="12" fill="var(--accent)" opacity="0.1" class="pulse-outer"/>
+                            </g>
+
+                            <!-- Plant marker: Yumbo / Pacífico (southwest) -->
+                            <g class="map-marker">
+                                <circle cx="135" cy="310" r="6" fill="var(--accent)" class="marker-dot"/>
+                                <circle cx="135" cy="310" r="6" fill="var(--accent)" opacity="0.4" class="pulse"/>
+                                <circle cx="135" cy="310" r="12" fill="var(--accent)" opacity="0.1" class="pulse-outer"/>
+                            </g>
+
+                            <!-- Plant marker: Bogotá / Centro -->
+                            <g class="map-marker">
+                                <circle cx="215" cy="248" r="6" fill="var(--accent)" class="marker-dot"/>
+                                <circle cx="215" cy="248" r="6" fill="var(--accent)" opacity="0.4" class="pulse"/>
+                                <circle cx="215" cy="248" r="12" fill="var(--accent)" opacity="0.1" class="pulse-outer"/>
+                            </g>
+
+                            <!-- Connector lines from markers to labels -->
+                            <g class="map-connectors" stroke="var(--accent)" stroke-width="1" opacity="0.4" fill="none">
+                                <line x1="274" y1="62" x2="320" y2="55" stroke-dasharray="3,3"/>
+                                <line x1="129" y1="310" x2="80" y2="318" stroke-dasharray="3,3"/>
+                                <line x1="221" y1="248" x2="270" y2="255" stroke-dasharray="3,3"/>
+                            </g>
+                        </svg>
+                        <div class="map-labels">
+                            <span class="map-label" style="top:6%;left:66%"><i class="ri-map-pin-2-fill"></i> Barranquilla</span>
+                            <span class="map-label" style="top:50%;left:2%"><i class="ri-map-pin-2-fill"></i> Yumbo</span>
+                            <span class="map-label" style="top:40%;left:56%"><i class="ri-map-pin-2-fill"></i> Bogotá</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="presence-content" data-animate>
+                    <span class="section-tag">Presencia Nacional</span>
+                    <h2 class="section-title">3 plantas estratégicamente ubicadas</h2>
+                    <p class="section-desc">
+                        Con presencia en las regiones Atlántica, Pacífica y Central de Colombia,
+                        garantizamos cobertura y servicio en todo el territorio nacional.
+                    </p>
+                    <div class="presence-mission">
+                        <div class="mission-card">
+                            <h4><i class="ri-focus-3-line"></i> Misión</h4>
+                            <p>Hacer la diferencia en la industria de la construcción a través de la creación sostenible de valor.</p>
+                        </div>
+                        <div class="mission-card">
+                            <h4><i class="ri-eye-line"></i> Visión</h4>
+                            <p>Ser el proveedor preferido de la industria de la construcción en Colombia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news" id="noticias">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Prensa</span>
+                <h2 class="section-title">Últimas noticias</h2>
+                <p class="section-desc">Mantente al día con las novedades de Eternit Colombia.</p>
+            </div>
+            <div class="news-grid">
+                <article class="news-card" data-animate>
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" alt="Certificación QAI" loading="lazy">
+                        <span class="news-date">Feb 2026</span>
+                    </div>
+                    <div class="news-body">
+                        <span class="news-category">Certificación</span>
+                        <h3>Certificación QAI para placas Eterboard</h3>
+                        <p>Nuestro laboratorio obtiene certificación internacional para pruebas de calidad en placas de fibrocemento.</p>
+                        <a href="#" class="news-link">Leer más <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </article>
+                <article class="news-card" data-animate>
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=600&q=80" alt="Tanque traslúcido" loading="lazy">
+                        <span class="news-date">Ene 2026</span>
+                    </div>
+                    <div class="news-body">
+                        <span class="news-category">Producto</span>
+                        <h3>Nuevo tanque traslúcido Eternit</h3>
+                        <p>Innovación en almacenamiento de agua con tecnología traslúcida para verificar el nivel de forma visual.</p>
+                        <a href="#" class="news-link">Leer más <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </article>
+                <article class="news-card" data-animate>
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=600&q=80" alt="Sostenibilidad" loading="lazy">
+                        <span class="news-date">Dic 2025</span>
+                    </div>
+                    <div class="news-body">
+                        <span class="news-category">Sostenibilidad</span>
+                        <h3>Reporte de sostenibilidad 2025</h3>
+                        <p>Conoce los avances en nuestro compromiso ambiental y las metas alcanzadas durante el año.</p>
+                        <a href="#" class="news-link">Leer más <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-card" data-animate>
+                <div class="cta-content">
+                    <h2>¿Listo para construir tu próximo proyecto?</h2>
+                    <p>Nuestro equipo de asesores está disponible para ayudarte a encontrar la solución perfecta.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="#contacto" class="btn btn-primary btn-lg">
+                        Contáctanos <i class="ri-arrow-right-line"></i>
+                    </a>
+                    <a href="#" class="btn btn-ghost">
+                        <i class="ri-download-2-line"></i> Catálogos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-animate>
+                    <span class="section-tag">Contacto</span>
+                    <h2 class="section-title">Hablemos de tu proyecto</h2>
+                    <p class="section-desc">Estamos aquí para asesorarte con las mejores soluciones para tu construcción.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="ri-phone-line"></i>
+                            <div>
+                                <strong>Teléfono</strong>
+                                <span>(601) 307 7060</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ri-mail-line"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <span>info@eternit.com.co</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ri-map-pin-line"></i>
+                            <div>
+                                <strong>Oficina principal</strong>
+                                <span>Bogotá, Colombia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+                        <a href="#" class="social-link" aria-label="X"><i class="ri-twitter-x-fill"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper" data-animate>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre completo</label>
+                                <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+57 300 000 0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <select id="subject" name="subject">
+                                <option value="">Selecciona una opción</option>
+                                <option value="cubiertas">Cubiertas</option>
+                                <option value="construccion">Construcción</option>
+                                <option value="agua">Soluciones de Agua</option>
+                                <option value="acabados">Acabados</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Enviar mensaje <i class="ri-send-plane-line"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presence Banner -->
+    <section class="presence-banner">
+        <div class="container">
+            <div class="presence-banner-header" data-animate>
+                <div class="presence-banner-icon">
+                    <i class="ri-map-pin-line"></i>
+                </div>
+                <span class="section-tag">Nuestra Presencia</span>
+                <h2 class="section-title">Presencia en todo el <span class="text-accent">territorio</span></h2>
+            </div>
+            <div class="presence-banner-stats" data-animate>
+                <div class="presence-stat">
+                    <span class="presence-stat-number">+80</span>
+                    <span class="presence-stat-label">Años de experiencia</span>
+                </div>
+                <div class="presence-stat-divider"></div>
+                <div class="presence-stat">
+                    <span class="presence-stat-number">3</span>
+                    <span class="presence-stat-label">Plantas de producción</span>
+                </div>
+                <div class="presence-stat-divider"></div>
+                <div class="presence-stat">
+                    <span class="presence-stat-number">100%</span>
+                    <span class="presence-stat-label">Cobertura nacional</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <img src="logo.png" alt="Eternit" class="footer-logo-img">
+                    </a>
+                    <p>Más de 80 años construyendo el futuro de Colombia con soluciones innovadoras y sostenibles.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="ri-youtube-fill"></i></a>
+                        <a href="#" aria-label="X"><i class="ri-twitter-x-fill"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Organización</h4>
+                        <a href="#">Acerca de</a>
+                        <a href="#">Misión y Visión</a>
+                        <a href="#">Valores</a>
+                        <a href="#">Alianzas</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Soluciones</h4>
+                        <a href="cubiertas.html">Cubiertas</a>
+                        <a href="#">Construcción</a>
+                        <a href="#">Agua</a>
+                        <a href="#">Acabados</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Recursos</h4>
+                        <a href="#">Catálogos</a>
+                        <a href="#">BIM</a>
+                        <a href="#">Prensa</a>
+                        <a href="#">Trabaja con nosotros</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Eternit Colombia. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Términos y condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
