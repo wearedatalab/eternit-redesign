@@ -56,27 +56,24 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
    ======================================== */
 .a-nav {
     position: fixed;
-    top: 16px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 0;
+    left: 0;
     z-index: 1000;
-    width: calc(100% - 48px);
-    max-width: 1120px;
-    background: rgba(255,255,255,0.72);
-    backdrop-filter: saturate(180%) blur(20px);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    border-radius: 60px;
-    padding: 0 8px;
+    width: 100%;
+    max-width: 100%;
+    background: var(--accent);
+    padding: 0 24px;
     height: 56px;
     display: flex;
     align-items: center;
+    justify-content: center;
     transition: all 0.4s var(--ease);
-    border: 1px solid rgba(0,0,0,0.06);
+    border: none;
+    border-radius: 0;
 }
 
 .a-nav.scrolled {
-    box-shadow: 0 4px 30px rgba(0,0,0,0.08);
-    border-color: rgba(0,0,0,0.08);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
 
 .a-nav-inner {
@@ -101,7 +98,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .a-nav-link {
     font-size: 0.8rem;
     font-weight: 500;
-    color: var(--black-light);
+    color: rgba(255,255,255,0.85);
     padding: 8px 14px;
     border-radius: 30px;
     transition: all 0.25s;
@@ -111,8 +108,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .a-nav-link:hover {
-    background: rgba(0,0,0,0.05);
-    color: var(--black);
+    background: rgba(255,255,255,0.15);
+    color: #fff;
 }
 
 /* Nav dropdown */
@@ -158,8 +155,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .a-nav-right { display: flex; align-items: center; gap: 8px; }
 
 .a-nav-cta {
-    background: var(--black);
-    color: var(--white);
+    background: var(--white);
+    color: var(--accent);
     padding: 8px 20px;
     border-radius: 30px;
     font-size: 0.78rem;
@@ -168,7 +165,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .a-nav-cta:hover {
-    background: var(--accent);
+    background: rgba(255,255,255,0.85);
 }
 
 .a-nav-toggle {
@@ -182,7 +179,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .a-nav-toggle span {
     display: block;
     height: 1.5px;
-    background: var(--black);
+    background: #fff;
     border-radius: 2px;
     transition: all 0.3s;
 }
