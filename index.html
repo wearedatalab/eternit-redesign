@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -77,25 +78,25 @@
     <!-- Hero Section -->
     <section class="hero" id="inicio">
         <div class="hero-bg">
-            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80" alt="" class="hero-bg-img">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80" alt="" class="hero-bg-img" data-parallax="0.15">
             <div class="hero-gradient"></div>
             <div class="hero-pattern"></div>
         </div>
         <div class="hero-content">
-            <div class="hero-badge" data-animate>
+            <div class="hero-badge" data-animate data-reveal="up">
                 <i class="ri-leaf-line"></i>
                 <span>Comprometidos con la sostenibilidad</span>
             </div>
-            <h1 class="hero-title" data-animate>
+            <h1 class="hero-title" data-animate data-split>
                 Construimos el<br>
                 <span class="hero-highlight">futuro</span> de<br>
                 Colombia
             </h1>
-            <p class="hero-subtitle" data-animate>
+            <p class="hero-subtitle" data-animate data-reveal="up" data-delay="300">
                 Más de 80 años liderando soluciones innovadoras y sostenibles
                 para la industria de la construcción.
             </p>
-            <div class="hero-actions" data-animate>
+            <div class="hero-actions" data-animate data-reveal="up" data-delay="400">
                 <a href="#soluciones" class="btn btn-primary">
                     Explorar soluciones
                     <i class="ri-arrow-right-line"></i>
@@ -106,17 +107,17 @@
             </div>
             <div class="hero-stats" data-animate>
                 <div class="stat">
-                    <span class="stat-number" data-count="80">0</span>
+                    <span class="stat-number" data-count="80" data-counter="+80">+80</span>
                     <span class="stat-label">Años de<br>experiencia</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-number" data-count="3">0</span>
+                    <span class="stat-number" data-count="3" data-counter="3">3</span>
                     <span class="stat-label">Plantas<br>estratégicas</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-number" data-count="500">0</span>
+                    <span class="stat-number" data-count="500" data-counter="500+">500+</span>
                     <span class="stat-label">Productos<br>disponibles</span>
                 </div>
             </div>
@@ -133,8 +134,8 @@
             <div class="video-grid">
                 <div class="video-text" data-animate>
                     <span class="section-tag">Conócenos</span>
-                    <h2 class="video-heading">Más de <span class="text-accent">80 años</span> liderando la industria de la construcción</h2>
-                    <p class="video-desc">Desde 1942, Eternit Colombia ha sido sinónimo de calidad, innovación y compromiso con el desarrollo del país. Nuestros productos están presentes en millones de hogares colombianos.</p>
+                    <h2 class="video-heading" data-reveal="up">Más de <span class="text-accent">80 años</span> liderando la industria de la construcción</h2>
+                    <p class="video-desc" data-reveal="up" data-delay="200">Desde 1942, Eternit Colombia ha sido sinónimo de calidad, innovación y compromiso con el desarrollo del país. Nuestros productos están presentes en millones de hogares colombianos.</p>
                     <div class="video-highlights">
                         <div class="video-highlight">
                             <i class="ri-award-line"></i>
@@ -179,12 +180,12 @@
         <div class="container">
             <div class="section-header" data-animate>
                 <span class="section-tag">Soluciones Integrales</span>
-                <h2 class="section-title">Todo lo que necesitas para construir</h2>
-                <p class="section-desc">Ofrecemos un portafolio completo de soluciones para cada etapa de tu proyecto de construcción.</p>
+                <h2 class="section-title" data-reveal="up">Todo lo que necesitas para construir</h2>
+                <p class="section-desc" data-reveal="up" data-delay="200">Ofrecemos un portafolio completo de soluciones para cada etapa de tu proyecto de construcción.</p>
             </div>
 
-            <div class="solutions-grid">
-                <div class="solution-card" data-animate>
+            <div class="solutions-grid" data-stagger>
+                <div class="solution-card" data-animate data-tilt data-img-zoom>
                     <div class="solution-card-img">
                         <img src="https://images.unsplash.com/photo-1632759145351-1d592919f522?w=600&q=80" alt="Cubiertas" loading="lazy">
                     </div>
@@ -201,7 +202,7 @@
                     </div>
                 </div>
 
-                <div class="solution-card" data-animate>
+                <div class="solution-card" data-animate data-tilt data-img-zoom>
                     <div class="solution-card-img">
                         <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80" alt="Construcción" loading="lazy">
                     </div>
@@ -218,7 +219,7 @@
                     </div>
                 </div>
 
-                <div class="solution-card" data-animate>
+                <div class="solution-card" data-animate data-tilt data-img-zoom>
                     <div class="solution-card-img">
                         <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600&q=80" alt="Agua" loading="lazy">
                     </div>
@@ -235,7 +236,7 @@
                     </div>
                 </div>
 
-                <div class="solution-card" data-animate>
+                <div class="solution-card" data-animate data-tilt data-img-zoom>
                     <div class="solution-card-img">
                         <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=80" alt="Acabados" loading="lazy">
                     </div>
@@ -261,7 +262,7 @@
             <div class="products-top" data-animate>
                 <div class="products-header">
                     <span class="section-tag section-tag--light">Catálogo</span>
-                    <h2 class="section-title products-title">Nuestros Productos</h2>
+                    <h2 class="section-title products-title" data-reveal="up">Nuestros Productos</h2>
                 </div>
                 <div class="products-nav">
                     <button class="products-nav-btn" id="prodPrev" aria-label="Anterior"><i class="ri-arrow-left-s-line"></i></button>
@@ -336,10 +337,10 @@
         <div class="sustainability-bg"></div>
         <div class="container">
             <div class="sustainability-grid">
-                <div class="sustainability-content" data-animate>
+                <div class="sustainability-content" data-animate data-reveal="left">
                     <span class="section-tag section-tag--light">Sostenibilidad</span>
-                    <h2 class="sustainability-title">Construimos con responsabilidad hacia el planeta</h2>
-                    <p class="sustainability-desc">
+                    <h2 class="sustainability-title" data-reveal="up">Construimos con responsabilidad hacia el planeta</h2>
+                    <p class="sustainability-desc" data-reveal="up" data-delay="200">
                         Nuestro compromiso con el medio ambiente se refleja en cada proceso productivo,
                         desde la reducción de nuestra huella de carbono hasta proyectos de reintegración social.
                     </p>
@@ -370,7 +371,7 @@
                         Conocer nuestro impacto <i class="ri-arrow-right-line"></i>
                     </a>
                 </div>
-                <div class="sustainability-visual" data-animate>
+                <div class="sustainability-visual" data-animate data-reveal="right">
                     <div class="sustain-image-wrapper">
                         <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=700&q=80" alt="Sostenibilidad ambiental" class="sustain-image" loading="lazy">
                         <div class="sustain-image-overlay">
@@ -390,28 +391,28 @@
         <div class="container">
             <div class="section-header" data-animate>
                 <span class="section-tag section-tag--light">Portales de Acceso</span>
-                <h2 class="section-title portals-title">Accede a tu portal</h2>
+                <h2 class="section-title portals-title" data-reveal="up">Accede a tu portal</h2>
             </div>
             <div class="portals-grid">
-                <a href="#" class="portal-card" data-animate>
+                <a href="#" class="portal-card" data-animate data-reveal="up">
                     <div class="portal-icon"><i class="ri-truck-line"></i></div>
                     <h3>Portal Proveedores</h3>
                     <p>Canal ágil y seguro para nuestros proveedores estratégicos</p>
                     <span class="portal-btn">Ingresar <i class="ri-arrow-right-line"></i></span>
                 </a>
-                <a href="#" class="portal-card" data-animate>
+                <a href="#" class="portal-card" data-animate data-reveal="up" data-delay="100">
                     <div class="portal-icon"><i class="ri-store-2-line"></i></div>
                     <h3>Portal Distribuidores</h3>
                     <p>Acceso exclusivo para clientes distribuidores autorizados</p>
                     <span class="portal-btn">Ingresar <i class="ri-arrow-right-line"></i></span>
                 </a>
-                <a href="#" class="portal-card" data-animate>
+                <a href="#" class="portal-card" data-animate data-reveal="up" data-delay="200">
                     <div class="portal-icon"><i class="ri-layout-grid-line"></i></div>
                     <h3>Eterboard</h3>
                     <p>Sistemas de construcción en seco de alto rendimiento</p>
                     <span class="portal-btn">Ingresar <i class="ri-arrow-right-line"></i></span>
                 </a>
-                <a href="#" class="portal-card" data-animate>
+                <a href="#" class="portal-card" data-animate data-reveal="up" data-delay="300">
                     <div class="portal-icon"><i class="ri-team-line"></i></div>
                     <h3>Comunidad Maestros</h3>
                     <p>Red de maestros de obra y capacitación continua</p>
@@ -501,8 +502,8 @@
                 </div>
                 <div class="presence-content" data-animate>
                     <span class="section-tag">Presencia Nacional</span>
-                    <h2 class="section-title">3 plantas estratégicamente ubicadas</h2>
-                    <p class="section-desc">
+                    <h2 class="section-title" data-reveal="up">3 plantas estratégicamente ubicadas</h2>
+                    <p class="section-desc" data-reveal="up" data-delay="200">
                         Con presencia en las regiones Atlántica, Pacífica y Central de Colombia,
                         garantizamos cobertura y servicio en todo el territorio nacional.
                     </p>
@@ -526,11 +527,11 @@
         <div class="container">
             <div class="section-header" data-animate>
                 <span class="section-tag">Prensa</span>
-                <h2 class="section-title">Últimas noticias</h2>
-                <p class="section-desc">Mantente al día con las novedades de Eternit Colombia.</p>
+                <h2 class="section-title" data-reveal="up">Últimas noticias</h2>
+                <p class="section-desc" data-reveal="up" data-delay="200">Mantente al día con las novedades de Eternit Colombia.</p>
             </div>
             <div class="news-grid">
-                <article class="news-card" data-animate>
+                <article class="news-card" data-animate data-reveal="up" data-delay="100">
                     <div class="news-image">
                         <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" alt="Certificación QAI" loading="lazy">
                         <span class="news-date">Feb 2026</span>
@@ -542,7 +543,7 @@
                         <a href="#" class="news-link">Leer más <i class="ri-arrow-right-line"></i></a>
                     </div>
                 </article>
-                <article class="news-card" data-animate>
+                <article class="news-card" data-animate data-reveal="up" data-delay="200">
                     <div class="news-image">
                         <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=600&q=80" alt="Tanque traslúcido" loading="lazy">
                         <span class="news-date">Ene 2026</span>
@@ -554,7 +555,7 @@
                         <a href="#" class="news-link">Leer más <i class="ri-arrow-right-line"></i></a>
                     </div>
                 </article>
-                <article class="news-card" data-animate>
+                <article class="news-card" data-animate data-reveal="up" data-delay="300">
                     <div class="news-image">
                         <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=600&q=80" alt="Sostenibilidad" loading="lazy">
                         <span class="news-date">Dic 2025</span>
@@ -573,10 +574,10 @@
     <!-- CTA Section -->
     <section class="cta">
         <div class="container">
-            <div class="cta-card" data-animate>
+            <div class="cta-card" data-animate data-reveal="zoom">
                 <div class="cta-content">
-                    <h2>¿Listo para construir tu próximo proyecto?</h2>
-                    <p>Nuestro equipo de asesores está disponible para ayudarte a encontrar la solución perfecta.</p>
+                    <h2 data-reveal="up">¿Listo para construir tu próximo proyecto?</h2>
+                    <p data-reveal="up" data-delay="200">Nuestro equipo de asesores está disponible para ayudarte a encontrar la solución perfecta.</p>
                 </div>
                 <div class="cta-actions">
                     <a href="#contacto" class="btn btn-primary btn-lg">
@@ -594,10 +595,10 @@
     <section class="contact" id="contacto">
         <div class="container">
             <div class="contact-grid">
-                <div class="contact-info" data-animate>
+                <div class="contact-info" data-animate data-reveal="up">
                     <span class="section-tag">Contacto</span>
-                    <h2 class="section-title">Hablemos de tu proyecto</h2>
-                    <p class="section-desc">Estamos aquí para asesorarte con las mejores soluciones para tu construcción.</p>
+                    <h2 class="section-title" data-reveal="up">Hablemos de tu proyecto</h2>
+                    <p class="section-desc" data-reveal="up" data-delay="200">Estamos aquí para asesorarte con las mejores soluciones para tu construcción.</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="ri-phone-line"></i>
@@ -629,7 +630,7 @@
                         <a href="#" class="social-link" aria-label="X"><i class="ri-twitter-x-fill"></i></a>
                     </div>
                 </div>
-                <div class="contact-form-wrapper" data-animate>
+                <div class="contact-form-wrapper" data-animate data-reveal="up">
                     <form class="contact-form" id="contactForm">
                         <div class="form-row">
                             <div class="form-group">
@@ -677,21 +678,21 @@
                     <i class="ri-map-pin-line"></i>
                 </div>
                 <span class="section-tag">Nuestra Presencia</span>
-                <h2 class="section-title">Presencia en todo el <span class="text-accent">territorio</span></h2>
+                <h2 class="section-title" data-reveal="up">Presencia en todo el <span class="text-accent">territorio</span></h2>
             </div>
             <div class="presence-banner-stats" data-animate>
                 <div class="presence-stat">
-                    <span class="presence-stat-number">+80</span>
+                    <span class="presence-stat-number" data-counter="+80">+80</span>
                     <span class="presence-stat-label">Años de experiencia</span>
                 </div>
                 <div class="presence-stat-divider"></div>
                 <div class="presence-stat">
-                    <span class="presence-stat-number">3</span>
+                    <span class="presence-stat-number" data-counter="3">3</span>
                     <span class="presence-stat-label">Plantas de producción</span>
                 </div>
                 <div class="presence-stat-divider"></div>
                 <div class="presence-stat">
-                    <span class="presence-stat-number">100%</span>
+                    <span class="presence-stat-number" data-counter="100%">100%</span>
                     <span class="presence-stat-label">Cobertura nacional</span>
                 </div>
             </div>
@@ -699,7 +700,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" data-reveal="fade">
         <div class="container">
             <div class="footer-top">
                 <div class="footer-brand">
@@ -749,6 +750,7 @@
         </div>
     </footer>
 
+    <script src="animations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,200 @@
+/* ============================================================
+   ETERNIT — Shared Animation System
+   ============================================================ */
+
+/* ------- Scroll Reveal Base ------- */
+[data-reveal] {
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(.215,.61,.355,1),
+              transform 0.8s cubic-bezier(.215,.61,.355,1);
+  will-change: opacity, transform;
+}
+
+[data-reveal].is-visible {
+  opacity: 1 !important;
+  transform: translate(0,0) scale(1) !important;
+}
+
+/* Direction variants */
+[data-reveal="up"]    { transform: translateY(60px); }
+[data-reveal="down"]  { transform: translateY(-60px); }
+[data-reveal="left"]  { transform: translateX(60px); }
+[data-reveal="right"] { transform: translateX(-60px); }
+[data-reveal="zoom"]  { transform: scale(0.88); }
+[data-reveal="fade"]  { transform: none; }
+
+/* Delay utility (set via data-delay="100" … "600") */
+[data-delay="100"] { transition-delay: .1s; }
+[data-delay="200"] { transition-delay: .2s; }
+[data-delay="300"] { transition-delay: .3s; }
+[data-delay="400"] { transition-delay: .4s; }
+[data-delay="500"] { transition-delay: .5s; }
+[data-delay="600"] { transition-delay: .6s; }
+[data-delay="700"] { transition-delay: .7s; }
+[data-delay="800"] { transition-delay: .8s; }
+
+/* Duration utility */
+[data-duration="fast"] { transition-duration: .5s, .5s; }
+[data-duration="slow"] { transition-duration: 1.2s, 1.2s; }
+
+/* ------- Staggered Children ------- */
+[data-stagger] > * {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s cubic-bezier(.215,.61,.355,1),
+              transform 0.6s cubic-bezier(.215,.61,.355,1);
+}
+
+[data-stagger].is-visible > *:nth-child(1)  { transition-delay: .05s; }
+[data-stagger].is-visible > *:nth-child(2)  { transition-delay: .12s; }
+[data-stagger].is-visible > *:nth-child(3)  { transition-delay: .19s; }
+[data-stagger].is-visible > *:nth-child(4)  { transition-delay: .26s; }
+[data-stagger].is-visible > *:nth-child(5)  { transition-delay: .33s; }
+[data-stagger].is-visible > *:nth-child(6)  { transition-delay: .40s; }
+[data-stagger].is-visible > *:nth-child(7)  { transition-delay: .47s; }
+[data-stagger].is-visible > *:nth-child(8)  { transition-delay: .54s; }
+[data-stagger].is-visible > *:nth-child(9)  { transition-delay: .61s; }
+[data-stagger].is-visible > *:nth-child(10) { transition-delay: .68s; }
+
+[data-stagger].is-visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ------- Parallax ------- */
+[data-parallax] {
+  will-change: transform;
+  transition: transform 0.05s linear;
+}
+
+/* ------- Animated Counters ------- */
+[data-counter] {
+  display: inline-block;
+}
+
+/* ------- Text Split (words slide in) ------- */
+[data-split] .word {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+[data-split] .word-inner {
+  display: inline-block;
+  transform: translateY(110%);
+  transition: transform 0.7s cubic-bezier(.215,.61,.355,1);
+}
+
+[data-split].is-visible .word-inner {
+  transform: translateY(0);
+}
+
+/* stagger words */
+[data-split].is-visible .word:nth-child(1) .word-inner  { transition-delay: 0s; }
+[data-split].is-visible .word:nth-child(2) .word-inner  { transition-delay: .04s; }
+[data-split].is-visible .word:nth-child(3) .word-inner  { transition-delay: .08s; }
+[data-split].is-visible .word:nth-child(4) .word-inner  { transition-delay: .12s; }
+[data-split].is-visible .word:nth-child(5) .word-inner  { transition-delay: .16s; }
+[data-split].is-visible .word:nth-child(6) .word-inner  { transition-delay: .20s; }
+[data-split].is-visible .word:nth-child(7) .word-inner  { transition-delay: .24s; }
+[data-split].is-visible .word:nth-child(8) .word-inner  { transition-delay: .28s; }
+[data-split].is-visible .word:nth-child(9) .word-inner  { transition-delay: .32s; }
+[data-split].is-visible .word:nth-child(10) .word-inner { transition-delay: .36s; }
+[data-split].is-visible .word:nth-child(11) .word-inner { transition-delay: .40s; }
+[data-split].is-visible .word:nth-child(12) .word-inner { transition-delay: .44s; }
+
+/* ------- Horizontal Line Grow ------- */
+[data-line] {
+  position: relative;
+}
+
+[data-line]::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: var(--accent, #f80718);
+  transition: width 1s cubic-bezier(.215,.61,.355,1);
+}
+
+[data-line].is-visible::after {
+  width: 60px;
+}
+
+/* ------- Progress bar (for stats) ------- */
+[data-progress] {
+  position: relative;
+  height: 4px;
+  background: rgba(0,0,0,.08);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+[data-progress]::after {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 0;
+  background: var(--accent, #f80718);
+  border-radius: 4px;
+  transition: width 1.5s cubic-bezier(.215,.61,.355,1) .3s;
+}
+
+[data-progress].is-visible::after {
+  width: var(--progress, 80%);
+}
+
+/* ------- Tilt / float on hover ------- */
+[data-tilt] {
+  transition: transform 0.4s cubic-bezier(.215,.61,.355,1);
+}
+
+[data-tilt]:hover {
+  transform: translateY(-8px) scale(1.015);
+}
+
+/* ------- Image zoom on hover ------- */
+[data-img-zoom] {
+  overflow: hidden;
+}
+
+[data-img-zoom] img {
+  transition: transform 0.6s cubic-bezier(.215,.61,.355,1);
+}
+
+[data-img-zoom]:hover img {
+  transform: scale(1.08);
+}
+
+/* ------- Rotate Icon on hover ------- */
+[data-icon-spin]:hover .ri-arrow-right-line,
+[data-icon-spin]:hover .ri-arrow-right-up-line,
+[data-icon-spin]:hover i[class*="ri-arrow"] {
+  transform: translateX(4px);
+  transition: transform 0.3s ease;
+}
+
+/* ------- Magnetic button ------- */
+[data-magnetic] {
+  transition: transform 0.3s cubic-bezier(.215,.61,.355,1);
+}
+
+/* ------- Reduced motion ------- */
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal],
+  [data-stagger] > *,
+  [data-split] .word-inner,
+  [data-parallax] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  [data-line]::after,
+  [data-progress]::after {
+    transition: none !important;
+  }
+}

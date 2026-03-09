@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
@@ -76,16 +77,16 @@
     <!-- Hero Section — CertainTeed Inspired -->
     <section class="hero2" id="inicio">
         <div class="hero2-bg">
-            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80" alt="" class="hero2-bg-img">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80" alt="" class="hero2-bg-img" data-parallax="0.15">
             <div class="hero2-overlay"></div>
         </div>
         <div class="hero2-content">
-            <p class="hero2-eyebrow">Más de 80 años construyendo Colombia</p>
-            <h1 class="hero2-title">
+            <p class="hero2-eyebrow" data-reveal="up" data-delay="300">Más de 80 años construyendo Colombia</p>
+            <h1 class="hero2-title" data-split>
                 Construido para <br>resistir. Diseñado<br> para <span>inspirar.</span>
             </h1>
-            <p class="hero2-subtitle">Soluciones integrales de alta calidad para cubiertas, construcción, agua y acabados.</p>
-            <div class="hero2-paths">
+            <p class="hero2-subtitle" data-reveal="up" data-delay="200">Soluciones integrales de alta calidad para cubiertas, construcción, agua y acabados.</p>
+            <div class="hero2-paths" data-reveal="up" data-delay="400">
                 <a href="#categorias" class="hero2-path-btn hero2-path-residential">
                     <i class="ri-home-smile-line"></i>
                     Soluciones Residenciales
@@ -109,11 +110,11 @@
     <section class="categories" id="categorias">
         <div class="container">
             <div class="categories-header">
-                <h2 class="categories-title">Nuestras soluciones</h2>
-                <p class="categories-desc">Un portafolio completo de productos para cada necesidad constructiva</p>
+                <h2 class="categories-title" data-reveal="up">Nuestras soluciones</h2>
+                <p class="categories-desc" data-reveal="up" data-delay="200">Un portafolio completo de productos para cada necesidad constructiva</p>
             </div>
-            <div class="categories-grid">
-                <a href="cubiertas.html" class="category-card category-card--large">
+            <div class="categories-grid" data-stagger>
+                <a href="cubiertas.html" class="category-card category-card--large" data-tilt data-img-zoom>
                     <div class="category-card-img">
                         <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=900" alt="Cubiertas" loading="lazy">
                     </div>
@@ -124,7 +125,7 @@
                         <span class="category-card-link">Explorar <i class="ri-arrow-right-line"></i></span>
                     </div>
                 </a>
-                <a href="#" class="category-card">
+                <a href="#" class="category-card" data-tilt data-img-zoom>
                     <div class="category-card-img">
                         <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80" alt="Construcción" loading="lazy">
                     </div>
@@ -135,7 +136,7 @@
                         <span class="category-card-link">Explorar <i class="ri-arrow-right-line"></i></span>
                     </div>
                 </a>
-                <a href="#" class="category-card">
+                <a href="#" class="category-card" data-tilt data-img-zoom>
                     <div class="category-card-img">
                         <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600" alt="Agua" loading="lazy">
                     </div>
@@ -146,7 +147,7 @@
                         <span class="category-card-link">Explorar <i class="ri-arrow-right-line"></i></span>
                     </div>
                 </a>
-                <a href="#" class="category-card">
+                <a href="#" class="category-card" data-tilt data-img-zoom>
                     <div class="category-card-img">
                         <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=80" alt="Acabados" loading="lazy">
                     </div>
@@ -157,7 +158,7 @@
                         <span class="category-card-link">Explorar <i class="ri-arrow-right-line"></i></span>
                     </div>
                 </a>
-                <a href="#" class="category-card">
+                <a href="#" class="category-card" data-tilt data-img-zoom>
                     <div class="category-card-img">
                         <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800" alt="Solar" loading="lazy">
                     </div>
@@ -177,23 +178,23 @@
         <div class="container">
             <div class="why-header">
                 <span class="why-tag">¿Por qué Eternit?</span>
-                <h2 class="why-title">Líderes en la industria de la construcción colombiana</h2>
+                <h2 class="why-title" data-reveal="up">Líderes en la industria de la construcción colombiana</h2>
             </div>
             <div class="why-stats">
                 <div class="why-stat">
-                    <span class="why-stat-number">+80</span>
+                    <span class="why-stat-number" data-counter="+80">+80</span>
                     <span class="why-stat-label">Años de experiencia en el mercado</span>
                 </div>
                 <div class="why-stat">
-                    <span class="why-stat-number">500+</span>
+                    <span class="why-stat-number" data-counter="500+">500+</span>
                     <span class="why-stat-label">Productos en nuestro portafolio</span>
                 </div>
                 <div class="why-stat">
-                    <span class="why-stat-number">3</span>
+                    <span class="why-stat-number" data-counter="3">3</span>
                     <span class="why-stat-label">Plantas de manufactura en Colombia</span>
                 </div>
                 <div class="why-stat">
-                    <span class="why-stat-number">100%</span>
+                    <span class="why-stat-number" data-counter="100%">100%</span>
                     <span class="why-stat-label">Cobertura en todo el territorio</span>
                 </div>
             </div>
@@ -206,7 +207,7 @@
             <div class="fp-header">
                 <div>
                     <span class="fp-tag">Productos destacados</span>
-                    <h2 class="fp-title">Lo más buscado</h2>
+                    <h2 class="fp-title" data-reveal="up">Lo más buscado</h2>
                 </div>
                 <div class="fp-nav">
                     <button class="fp-nav-btn" id="fpPrev"><i class="ri-arrow-left-s-line"></i></button>
@@ -215,7 +216,7 @@
             </div>
             <div class="fp-carousel">
                 <div class="fp-track" id="fpTrack">
-                    <a href="cubiertas.html" class="fp-card">
+                    <a href="cubiertas.html" class="fp-card" data-reveal="up" data-delay="100">
                         <div class="fp-card-badge">Más vendido</div>
                         <div class="fp-card-img">
                             <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600" alt="Teja P7">
@@ -227,7 +228,7 @@
                             <span class="fp-card-link">Ver producto <i class="ri-arrow-right-line"></i></span>
                         </div>
                     </a>
-                    <a href="#" class="fp-card">
+                    <a href="#" class="fp-card" data-reveal="up" data-delay="200">
                         <div class="fp-card-img">
                             <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600" alt="Tanque 500L">
                         </div>
@@ -238,7 +239,7 @@
                             <span class="fp-card-link">Ver producto <i class="ri-arrow-right-line"></i></span>
                         </div>
                     </a>
-                    <a href="cubiertas.html" class="fp-card">
+                    <a href="cubiertas.html" class="fp-card" data-reveal="up" data-delay="300">
                         <div class="fp-card-img">
                             <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=600" alt="Teja P7 Plus">
                         </div>
@@ -249,7 +250,7 @@
                             <span class="fp-card-link">Ver producto <i class="ri-arrow-right-line"></i></span>
                         </div>
                     </a>
-                    <a href="#" class="fp-card">
+                    <a href="#" class="fp-card" data-reveal="up" data-delay="400">
                         <div class="fp-card-img">
                             <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600" alt="Tanque 1000L">
                         </div>
@@ -260,7 +261,7 @@
                             <span class="fp-card-link">Ver producto <i class="ri-arrow-right-line"></i></span>
                         </div>
                     </a>
-                    <a href="cubiertas.html" class="fp-card">
+                    <a href="cubiertas.html" class="fp-card" data-reveal="up" data-delay="500">
                         <div class="fp-card-img">
                             <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=600" alt="Teja Sevillana">
                         </div>
@@ -271,7 +272,7 @@
                             <span class="fp-card-link">Ver producto <i class="ri-arrow-right-line"></i></span>
                         </div>
                     </a>
-                    <a href="#" class="fp-card">
+                    <a href="#" class="fp-card" data-reveal="up" data-delay="600">
                         <div class="fp-card-img">
                             <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600" alt="Teja PVC">
                         </div>
@@ -291,7 +292,7 @@
     <section class="about-section">
         <div class="container">
             <div class="about-grid">
-                <div class="about-video">
+                <div class="about-video" data-reveal="right">
                     <div class="about-video-wrapper">
                         <div class="about-video-thumb" id="aboutVideoThumb">
                             <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80" alt="Eternit Colombia">
@@ -306,9 +307,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="about-text">
+                <div class="about-text" data-reveal="left">
                     <span class="about-tag">Conócenos</span>
-                    <h2 class="about-title">Más de <span>80 años</span> de innovación y compromiso</h2>
+                    <h2 class="about-title" data-reveal="up">Más de <span>80 años</span> de innovación y compromiso</h2>
                     <p>Desde 1942, Eternit Colombia ha sido sinónimo de calidad e innovación en la industria de la construcción. Nuestros productos están presentes en millones de hogares colombianos.</p>
                     <div class="about-features">
                         <div class="about-feat">
@@ -343,9 +344,9 @@
     <section class="sustain2" id="sostenibilidad">
         <div class="container">
             <div class="sustain2-grid">
-                <div class="sustain2-text">
+                <div class="sustain2-text" data-reveal="left">
                     <span class="sustain2-tag">Sostenibilidad</span>
-                    <h2 class="sustain2-title">Construimos con responsabilidad</h2>
+                    <h2 class="sustain2-title" data-reveal="up">Construimos con responsabilidad</h2>
                     <p>Nuestro compromiso con el medio ambiente se refleja en cada proceso productivo, desde la reducción de nuestra huella de carbono hasta proyectos de impacto social.</p>
                     <div class="sustain2-items">
                         <div class="sustain2-item">
@@ -367,7 +368,7 @@
                     </div>
                     <a href="#" class="btn2-outline">Ver reporte de sostenibilidad <i class="ri-arrow-right-line"></i></a>
                 </div>
-                <div class="sustain2-image">
+                <div class="sustain2-image" data-reveal="right">
                     <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=700&q=80" alt="Sostenibilidad Eternit">
                     <div class="sustain2-badge">
                         <i class="ri-leaf-line"></i>
@@ -381,8 +382,8 @@
     <!-- Portals -->
     <section class="portals2">
         <div class="container">
-            <h2 class="portals2-title">Acceso rápido</h2>
-            <div class="portals2-grid">
+            <h2 class="portals2-title" data-reveal="up">Acceso rápido</h2>
+            <div class="portals2-grid" data-stagger>
                 <a href="#" class="portal2-card">
                     <i class="ri-truck-line"></i>
                     <h3>Proveedores</h3>
@@ -411,11 +412,11 @@
     <section class="news2" id="noticias">
         <div class="container">
             <div class="news2-header">
-                <h2 class="news2-title">Últimas noticias</h2>
+                <h2 class="news2-title" data-reveal="up">Últimas noticias</h2>
                 <a href="#" class="news2-all">Ver todas <i class="ri-arrow-right-line"></i></a>
             </div>
             <div class="news2-grid">
-                <article class="news2-card">
+                <article class="news2-card" data-reveal="up" data-delay="100">
                     <div class="news2-card-img">
                         <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" alt="Certificación" loading="lazy">
                         <span class="news2-date">Feb 2026</span>
@@ -427,7 +428,7 @@
                         <a href="#">Leer más <i class="ri-arrow-right-line"></i></a>
                     </div>
                 </article>
-                <article class="news2-card">
+                <article class="news2-card" data-reveal="up" data-delay="200">
                     <div class="news2-card-img">
                         <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=600&q=80" alt="Tanque" loading="lazy">
                         <span class="news2-date">Ene 2026</span>
@@ -439,7 +440,7 @@
                         <a href="#">Leer más <i class="ri-arrow-right-line"></i></a>
                     </div>
                 </article>
-                <article class="news2-card">
+                <article class="news2-card" data-reveal="up" data-delay="300">
                     <div class="news2-card-img">
                         <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=600&q=80" alt="Sostenibilidad" loading="lazy">
                         <span class="news2-date">Dic 2025</span>
@@ -458,10 +459,10 @@
     <!-- CTA + Contact -->
     <section class="contact2" id="contacto">
         <div class="container">
-            <div class="contact2-grid">
+            <div class="contact2-grid" data-reveal="up">
                 <div class="contact2-info">
-                    <h2 class="contact2-title">¿Listo para tu próximo proyecto?</h2>
-                    <p>Nuestro equipo de expertos te acompaña en cada etapa de tu construcción.</p>
+                    <h2 class="contact2-title" data-reveal="up">¿Listo para tu próximo proyecto?</h2>
+                    <p data-reveal="up" data-delay="200">Nuestro equipo de expertos te acompaña en cada etapa de tu construcción.</p>
                     <div class="contact2-details">
                         <div class="contact2-item">
                             <i class="ri-phone-line"></i>
@@ -520,7 +521,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer2">
+    <footer class="footer2" data-reveal="fade">
         <div class="container">
             <div class="footer2-top">
                 <div class="footer2-brand">
@@ -569,6 +570,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="animations.js"></script>
 
     <script>
     document.addEventListener('DOMContentLoaded', () => {

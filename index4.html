@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="styles4.css">
 </head>
 <body>
@@ -71,26 +72,26 @@
     <section class="b-hero theme-dark">
         <div class="b-container">
             <div class="b-hero-content">
-                <p class="b-hero-tag">Nuevo</p>
-                <h1 class="b-hero-title">Teja Colonial Plus</h1>
-                <p class="b-hero-sub">La elegancia de lo clásico con la resistencia del fibrocemento. Diseño artesanal para proyectos que inspiran.</p>
-                <div class="b-hero-actions">
+                <p class="b-hero-tag" data-reveal="up">Nuevo</p>
+                <h1 class="b-hero-title" data-split>Teja Colonial Plus</h1>
+                <p class="b-hero-sub" data-reveal="up" data-delay="200">La elegancia de lo clásico con la resistencia del fibrocemento. Diseño artesanal para proyectos que inspiran.</p>
+                <div class="b-hero-actions" data-reveal="up" data-delay="400">
                     <a href="#" class="b-btn-primary">Conocer más</a>
                     <a href="#" class="b-btn-secondary">Ver catálogo <i class="ri-arrow-right-line"></i></a>
                 </div>
             </div>
         </div>
-        <div class="b-hero-image">
+        <div class="b-hero-image" data-parallax="0.15">
             <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200" alt="Teja Colonial Plus Eternit">
         </div>
     </section>
 
     <!-- Product Cards Grid - Like Apple's promo modules -->
     <section class="b-cards-section">
-        <div class="b-cards-grid">
+        <div class="b-cards-grid" data-stagger>
 
             <!-- Large card - Cubiertas -->
-            <div class="b-card b-card-large theme-dark" style="background-image: url('https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800');">
+            <div class="b-card b-card-large theme-dark" data-tilt style="background-image: url('https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800');">
                 <div class="b-card-content">
                     <p class="b-card-tag">Solución estrella</p>
                     <h2 class="b-card-title">Cubiertas</h2>
@@ -102,7 +103,7 @@
             </div>
 
             <!-- Large card - Tanques -->
-            <div class="b-card b-card-large" style="background-color: #e8f4fd;">
+            <div class="b-card b-card-large" data-tilt style="background-color: #e8f4fd;">
                 <div class="b-card-content">
                     <p class="b-card-tag">Soluciones de Agua</p>
                     <h2 class="b-card-title" style="color: #0066b3;">Tanques Eternit</h2>
@@ -117,7 +118,7 @@
             </div>
 
             <!-- Small card - Construcción -->
-            <div class="b-card b-card-small theme-dark" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800');">
+            <div class="b-card b-card-small theme-dark" data-tilt style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800');">
                 <div class="b-card-content">
                     <h3 class="b-card-title-sm">Construcción</h3>
                     <p class="b-card-sub-sm">Placas y sistemas constructivos eficientes.</p>
@@ -126,7 +127,7 @@
             </div>
 
             <!-- Small card - Acabados -->
-            <div class="b-card b-card-small" style="background-color: #f5f0eb;">
+            <div class="b-card b-card-small" data-tilt style="background-color: #f5f0eb;">
                 <div class="b-card-content">
                     <h3 class="b-card-title-sm">Acabados</h3>
                     <p class="b-card-sub-sm">Cielo raso y acabados arquitectónicos con diseño.</p>
@@ -138,7 +139,7 @@
             </div>
 
             <!-- Small card - Teja Ondulada -->
-            <div class="b-card b-card-small" style="background-color: #fef3f3;">
+            <div class="b-card b-card-small" data-tilt style="background-color: #fef3f3;">
                 <div class="b-card-content">
                     <h3 class="b-card-title-sm">Teja Ondulada P7</h3>
                     <p class="b-card-sub-sm">La cubierta más popular de Colombia.</p>
@@ -150,7 +151,7 @@
             </div>
 
             <!-- Small card - Solar -->
-            <div class="b-card b-card-small theme-dark" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+            <div class="b-card b-card-small theme-dark" data-tilt style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
                 <div class="b-card-content">
                     <h3 class="b-card-title-sm">Solución Solar</h3>
                     <p class="b-card-sub-sm">Cubiertas inteligentes con energía fotovoltaica.</p>
@@ -164,7 +165,7 @@
     <!-- Statement Section -->
     <section class="b-statement" id="nosotros">
         <div class="b-container">
-            <h2 class="b-statement-text b-reveal">
+            <h2 class="b-statement-text b-reveal" data-split>
                 Desde <strong>1942</strong>, Eternit ha sido sinónimo de <strong>calidad</strong> y <strong>confianza</strong> en la industria de la construcción colombiana. Nuestros productos protegen <strong>millones de hogares</strong>.
             </h2>
         </div>
@@ -175,19 +176,19 @@
         <div class="b-container">
             <div class="b-numbers-grid b-reveal">
                 <div class="b-number">
-                    <span class="b-number-val">+80</span>
+                    <span class="b-number-val" data-counter="+80">+80</span>
                     <span class="b-number-label">Años de<br>trayectoria</span>
                 </div>
                 <div class="b-number">
-                    <span class="b-number-val">500+</span>
+                    <span class="b-number-val" data-counter="500+">500+</span>
                     <span class="b-number-label">Productos en<br>portafolio</span>
                 </div>
                 <div class="b-number">
-                    <span class="b-number-val">3</span>
+                    <span class="b-number-val" data-counter="3">3</span>
                     <span class="b-number-label">Plantas de<br>manufactura</span>
                 </div>
                 <div class="b-number">
-                    <span class="b-number-val">100%</span>
+                    <span class="b-number-val" data-counter="100%">100%</span>
                     <span class="b-number-label">Cobertura<br>nacional</span>
                 </div>
             </div>
@@ -197,10 +198,10 @@
     <!-- Projects Gallery - Carousel with dots like Apple's entertainment section -->
     <section class="b-gallery theme-dark" id="proyectos">
         <div class="b-container">
-            <h2 class="b-section-title b-reveal">Proyectos que inspiran.</h2>
-            <p class="b-section-sub b-reveal">Obras realizadas con productos Eternit en todo el país.</p>
+            <h2 class="b-section-title b-reveal" data-reveal="up">Proyectos que inspiran.</h2>
+            <p class="b-section-sub b-reveal" data-reveal="up" data-delay="200">Obras realizadas con productos Eternit en todo el país.</p>
         </div>
-        <div class="b-gallery-wrapper">
+        <div class="b-gallery-wrapper" data-reveal="zoom">
             <div class="b-gallery-track" id="galleryTrack">
                 <div class="b-gallery-slide active" style="background-image: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200');">
                     <div class="b-gallery-slide-content">
@@ -243,12 +244,12 @@
     <!-- Service Tiles - 3 columns, color coded like Apple's FAM section -->
     <section class="b-services">
         <div class="b-container">
-            <h2 class="b-section-title b-reveal">Todo lo que necesitas. En un solo lugar.</h2>
+            <h2 class="b-section-title b-reveal" data-reveal="up">Todo lo que necesitas. En un solo lugar.</h2>
         </div>
-        <div class="b-services-grid">
+        <div class="b-services-grid" data-stagger>
 
             <!-- Cubiertas tiles -->
-            <div class="b-service-tile" style="background-color: #c0392b;">
+            <div class="b-service-tile" data-tilt style="background-color: #c0392b;">
                 <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800" alt="Teja P7">
                 <div class="b-service-tile-info">
                     <span class="b-service-tile-cat">Cubiertas</span>
@@ -256,7 +257,7 @@
                     <a href="#">Explorar <i class="ri-arrow-right-s-line"></i></a>
                 </div>
             </div>
-            <div class="b-service-tile" style="background-color: #e74c3c;">
+            <div class="b-service-tile" data-tilt style="background-color: #e74c3c;">
                 <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800" alt="Teja Colonial">
                 <div class="b-service-tile-info">
                     <span class="b-service-tile-cat">Cubiertas</span>
@@ -264,7 +265,7 @@
                     <a href="#">Explorar <i class="ri-arrow-right-s-line"></i></a>
                 </div>
             </div>
-            <div class="b-service-tile" style="background-color: #d35400;">
+            <div class="b-service-tile" data-tilt style="background-color: #d35400;">
                 <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200" alt="Teja Sevillana">
                 <div class="b-service-tile-info">
                     <span class="b-service-tile-cat">Cubiertas</span>
@@ -274,7 +275,7 @@
             </div>
 
             <!-- Agua tiles -->
-            <div class="b-service-tile" style="background-color: #0066b3;">
+            <div class="b-service-tile" data-tilt style="background-color: #0066b3;">
                 <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600" alt="Tanque 500L">
                 <div class="b-service-tile-info">
                     <span class="b-service-tile-cat">Agua</span>
@@ -282,7 +283,7 @@
                     <a href="#">Explorar <i class="ri-arrow-right-s-line"></i></a>
                 </div>
             </div>
-            <div class="b-service-tile" style="background-color: #2980b9;">
+            <div class="b-service-tile" data-tilt style="background-color: #2980b9;">
                 <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600" alt="Tanque 1000L">
                 <div class="b-service-tile-info">
                     <span class="b-service-tile-cat">Agua</span>
@@ -290,7 +291,7 @@
                     <a href="#">Explorar <i class="ri-arrow-right-s-line"></i></a>
                 </div>
             </div>
-            <div class="b-service-tile" style="background-color: #1a5276;">
+            <div class="b-service-tile" data-tilt style="background-color: #1a5276;">
                 <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600" alt="Tanque 2000L">
                 <div class="b-service-tile-info">
                     <span class="b-service-tile-cat">Agua</span>
@@ -300,7 +301,7 @@
             </div>
 
             <!-- Construcción tiles -->
-            <div class="b-service-tile" style="background-color: #2c3e50;">
+            <div class="b-service-tile" data-tilt style="background-color: #2c3e50;">
                 <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800" alt="Placa Plana">
                 <div class="b-service-tile-info">
                     <span class="b-service-tile-cat">Construcción</span>
@@ -308,7 +309,7 @@
                     <a href="#">Explorar <i class="ri-arrow-right-s-line"></i></a>
                 </div>
             </div>
-            <div class="b-service-tile" style="background-color: #34495e;">
+            <div class="b-service-tile" data-tilt style="background-color: #34495e;">
                 <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800" alt="Cielo Raso">
                 <div class="b-service-tile-info">
                     <span class="b-service-tile-cat">Construcción</span>
@@ -316,7 +317,7 @@
                     <a href="#">Explorar <i class="ri-arrow-right-s-line"></i></a>
                 </div>
             </div>
-            <div class="b-service-tile" style="background-color: #1c2833;">
+            <div class="b-service-tile" data-tilt style="background-color: #1c2833;">
                 <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800" alt="Superboard">
                 <div class="b-service-tile-info">
                     <span class="b-service-tile-cat">Construcción</span>
@@ -332,7 +333,7 @@
     <section class="b-sustain" id="sostenibilidad">
         <div class="b-container">
             <div class="b-sustain-inner b-reveal">
-                <div class="b-sustain-text">
+                <div class="b-sustain-text" data-reveal="left">
                     <p class="b-label">Sostenibilidad</p>
                     <h2>Compromiso real<br>con el planeta.</h2>
                     <ul class="b-sustain-list">
@@ -343,7 +344,7 @@
                     </ul>
                     <a href="#" class="b-btn-outline">Ver reporte <i class="ri-arrow-right-line"></i></a>
                 </div>
-                <div class="b-sustain-image">
+                <div class="b-sustain-image" data-reveal="right">
                     <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600" alt="Sostenibilidad">
                 </div>
             </div>
@@ -353,9 +354,9 @@
     <!-- News -->
     <section class="b-news" id="noticias">
         <div class="b-container">
-            <h2 class="b-section-title b-reveal">Noticias</h2>
+            <h2 class="b-section-title b-reveal" data-reveal="up">Noticias</h2>
             <div class="b-news-grid b-reveal">
-                <article class="b-news-card">
+                <article class="b-news-card" data-reveal="up" data-delay="100">
                     <div class="b-news-img">
                         <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400" alt="">
                     </div>
@@ -365,7 +366,7 @@
                         <a href="#">Leer <i class="ri-arrow-right-s-line"></i></a>
                     </div>
                 </article>
-                <article class="b-news-card">
+                <article class="b-news-card" data-reveal="up" data-delay="200">
                     <div class="b-news-img">
                         <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=400" alt="">
                     </div>
@@ -375,7 +376,7 @@
                         <a href="#">Leer <i class="ri-arrow-right-s-line"></i></a>
                     </div>
                 </article>
-                <article class="b-news-card">
+                <article class="b-news-card" data-reveal="up" data-delay="300">
                     <div class="b-news-img">
                         <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400" alt="">
                     </div>
@@ -392,7 +393,7 @@
     <!-- Contact -->
     <section class="b-contact" id="contacto">
         <div class="b-container">
-            <div class="b-contact-inner b-reveal">
+            <div class="b-contact-inner b-reveal" data-reveal="up">
                 <div class="b-contact-info">
                     <h2>Hablemos de tu proyecto.</h2>
                     <p>Nuestro equipo de expertos te acompaña en cada etapa.</p>
@@ -425,7 +426,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="b-footer">
+    <footer class="b-footer" data-reveal="fade">
         <div class="b-container">
             <div class="b-footer-grid">
                 <div class="b-footer-col">
@@ -466,6 +467,7 @@
         </div>
     </footer>
 
+    <script src="animations.js"></script>
     <script>
         // Nav scroll effect
         const nav = document.getElementById('bNav');

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="styles3.css">
 </head>
 <body>
@@ -46,23 +47,23 @@
     <!-- Hero -->
     <section class="a-hero">
         <div class="a-hero-content">
-            <h1 class="a-hero-title a-reveal">
+            <h1 class="a-hero-title a-reveal" data-split>
                 Construimos el futuro.<br>
                 <span>Con cada teja.</span>
             </h1>
-            <p class="a-hero-sub a-reveal">Más de 80 años de innovación, calidad y compromiso con Colombia.</p>
-            <div class="a-hero-actions a-reveal">
+            <p class="a-hero-sub a-reveal" data-reveal="up" data-delay="200">Más de 80 años de innovación, calidad y compromiso con Colombia.</p>
+            <div class="a-hero-actions a-reveal" data-reveal="up" data-delay="400">
                 <a href="#soluciones" class="a-btn-primary">Explorar soluciones</a>
                 <a href="#nosotros" class="a-btn-ghost">Conoce nuestra historia <i class="ri-arrow-right-line"></i></a>
             </div>
         </div>
-        <div class="a-hero-visual a-reveal">
+        <div class="a-hero-visual a-reveal" data-parallax="0.12">
             <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=900" alt="Eternit Cubiertas">
         </div>
     </section>
 
     <!-- Marquee -->
-    <div class="a-marquee">
+    <div class="a-marquee" data-reveal="fade">
         <div class="a-marquee-track">
             <span>Cubiertas</span><span>&bull;</span>
             <span>Construcción</span><span>&bull;</span>
@@ -84,10 +85,10 @@
         <div class="a-container">
             <div class="a-section-intro a-reveal">
                 <span class="a-label">Soluciones</span>
-                <h2 class="a-heading-lg">Todo lo que necesitas.<br><span>En un solo lugar.</span></h2>
+                <h2 class="a-heading-lg" data-reveal="up">Todo lo que necesitas.<br><span>En un solo lugar.</span></h2>
             </div>
-            <div class="a-solutions-grid">
-                <a href="cubiertas.html" class="a-sol-card a-reveal">
+            <div class="a-solutions-grid" data-stagger>
+                <a href="cubiertas.html" class="a-sol-card a-reveal" data-tilt data-img-zoom>
                     <div class="a-sol-img">
                         <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800" alt="Cubiertas">
                     </div>
@@ -97,7 +98,7 @@
                         <span class="a-sol-link">Explorar <i class="ri-arrow-right-up-line"></i></span>
                     </div>
                 </a>
-                <a href="#" class="a-sol-card a-reveal">
+                <a href="#" class="a-sol-card a-reveal" data-tilt data-img-zoom>
                     <div class="a-sol-img">
                         <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80" alt="Construcción">
                     </div>
@@ -107,7 +108,7 @@
                         <span class="a-sol-link">Explorar <i class="ri-arrow-right-up-line"></i></span>
                     </div>
                 </a>
-                <a href="#" class="a-sol-card a-reveal">
+                <a href="#" class="a-sol-card a-reveal" data-tilt data-img-zoom>
                     <div class="a-sol-img">
                         <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600" alt="Agua">
                     </div>
@@ -117,7 +118,7 @@
                         <span class="a-sol-link">Explorar <i class="ri-arrow-right-up-line"></i></span>
                     </div>
                 </a>
-                <a href="#" class="a-sol-card a-reveal">
+                <a href="#" class="a-sol-card a-reveal" data-tilt data-img-zoom>
                     <div class="a-sol-img">
                         <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=80" alt="Acabados">
                     </div>
@@ -134,7 +135,7 @@
     <!-- Statement -->
     <section class="a-statement" id="nosotros">
         <div class="a-container">
-            <p class="a-statement-text a-reveal">
+            <p class="a-statement-text a-reveal" data-reveal="up">
                 Desde <strong>1942</strong>, Eternit ha transformado la industria de la construcción en Colombia.
                 Nuestros productos están en <strong>millones de hogares</strong> — y seguimos innovando cada día.
             </p>
@@ -146,19 +147,19 @@
         <div class="a-container">
             <div class="a-numbers-grid a-reveal">
                 <div class="a-number">
-                    <span class="a-number-val">+80</span>
+                    <span class="a-number-val" data-counter="+80">+80</span>
                     <span class="a-number-label">Años de<br>trayectoria</span>
                 </div>
                 <div class="a-number">
-                    <span class="a-number-val">500+</span>
+                    <span class="a-number-val" data-counter="500+">500+</span>
                     <span class="a-number-label">Productos en<br>nuestro portafolio</span>
                 </div>
                 <div class="a-number">
-                    <span class="a-number-val">3</span>
+                    <span class="a-number-val" data-counter="3">3</span>
                     <span class="a-number-label">Plantas de<br>manufactura</span>
                 </div>
                 <div class="a-number">
-                    <span class="a-number-val">100%</span>
+                    <span class="a-number-val" data-counter="100%">100%</span>
                     <span class="a-number-label">Cobertura<br>nacional</span>
                 </div>
             </div>
@@ -170,40 +171,40 @@
         <div class="a-container">
             <div class="a-section-intro a-reveal">
                 <span class="a-label">Productos</span>
-                <h2 class="a-heading-lg">Diseñados para<br><span>durar generaciones.</span></h2>
+                <h2 class="a-heading-lg" data-reveal="up">Diseñados para<br><span>durar generaciones.</span></h2>
             </div>
         </div>
         <div class="a-products-scroll">
             <div class="a-products-track">
-                <a href="cubiertas.html" class="a-prod-card a-reveal">
+                <a href="cubiertas.html" class="a-prod-card a-reveal" data-reveal="up">
                     <div class="a-prod-img">
                         <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600" alt="Teja P7">
                     </div>
                     <h4>Teja Ondulada P7</h4>
                     <span>Cubiertas</span>
                 </a>
-                <a href="#" class="a-prod-card a-reveal">
+                <a href="#" class="a-prod-card a-reveal" data-reveal="up" data-delay="100">
                     <div class="a-prod-img">
                         <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600" alt="Tanque 500L">
                     </div>
                     <h4>Tanque Azul 500L</h4>
                     <span>Agua</span>
                 </a>
-                <a href="cubiertas.html" class="a-prod-card a-reveal">
+                <a href="cubiertas.html" class="a-prod-card a-reveal" data-reveal="up" data-delay="200">
                     <div class="a-prod-img">
                         <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=600" alt="Teja P7 Plus">
                     </div>
                     <h4>Teja P7 Plus</h4>
                     <span>Cubiertas</span>
                 </a>
-                <a href="#" class="a-prod-card a-reveal">
+                <a href="#" class="a-prod-card a-reveal" data-reveal="up" data-delay="300">
                     <div class="a-prod-img">
                         <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600" alt="Tanque 1000L">
                     </div>
                     <h4>Tanque 1000L</h4>
                     <span>Agua</span>
                 </a>
-                <a href="cubiertas.html" class="a-prod-card a-reveal">
+                <a href="cubiertas.html" class="a-prod-card a-reveal" data-reveal="up" data-delay="400">
                     <div class="a-prod-img">
                         <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=600" alt="Teja Sevillana">
                     </div>
@@ -217,7 +218,7 @@
     <!-- Video Feature -->
     <section class="a-video-feature">
         <div class="a-container">
-            <div class="a-video-wrap a-reveal">
+            <div class="a-video-wrap a-reveal" data-reveal="zoom">
                 <div class="a-video-thumb" id="aVideoThumb">
                     <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80" alt="Eternit">
                     <div class="a-video-overlay"></div>
@@ -238,10 +239,10 @@
     <section class="a-sustain" id="sostenibilidad">
         <div class="a-container">
             <div class="a-sustain-grid">
-                <div class="a-sustain-text a-reveal">
+                <div class="a-sustain-text a-reveal" data-reveal="left">
                     <span class="a-label">Sostenibilidad</span>
-                    <h2 class="a-heading-md">Compromiso real con el planeta.</h2>
-                    <p>Cada decisión que tomamos considera su impacto ambiental. Desde la reducción de nuestra huella de carbono hasta proyectos de acceso al agua para comunidades vulnerables.</p>
+                    <h2 class="a-heading-md" data-reveal="up">Compromiso real con el planeta.</h2>
+                    <p data-reveal="up" data-delay="200">Cada decisión que tomamos considera su impacto ambiental. Desde la reducción de nuestra huella de carbono hasta proyectos de acceso al agua para comunidades vulnerables.</p>
                     <ul class="a-check-list">
                         <li><i class="ri-check-line"></i> Reducción activa de huella de carbono</li>
                         <li><i class="ri-check-line"></i> Adheridos al Pacto Global de la ONU</li>
@@ -249,7 +250,7 @@
                     </ul>
                     <a href="#" class="a-btn-secondary">Ver reporte <i class="ri-arrow-right-line"></i></a>
                 </div>
-                <div class="a-sustain-img a-reveal">
+                <div class="a-sustain-img a-reveal" data-reveal="right">
                     <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=700&q=80" alt="Sostenibilidad">
                 </div>
             </div>
@@ -261,10 +262,10 @@
         <div class="a-container">
             <div class="a-section-intro a-reveal">
                 <span class="a-label">Noticias</span>
-                <h2 class="a-heading-lg">Lo último de Eternit.</h2>
+                <h2 class="a-heading-lg" data-reveal="up">Lo último de Eternit.</h2>
             </div>
-            <div class="a-news-grid">
-                <article class="a-news-card a-reveal">
+            <div class="a-news-grid" data-stagger>
+                <article class="a-news-card a-reveal" data-reveal="up">
                     <div class="a-news-img">
                         <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" alt="Certificación">
                     </div>
@@ -274,7 +275,7 @@
                         <a href="#">Leer <i class="ri-arrow-right-line"></i></a>
                     </div>
                 </article>
-                <article class="a-news-card a-reveal">
+                <article class="a-news-card a-reveal" data-reveal="up" data-delay="100">
                     <div class="a-news-img">
                         <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=600&q=80" alt="Tanque">
                     </div>
@@ -284,7 +285,7 @@
                         <a href="#">Leer <i class="ri-arrow-right-line"></i></a>
                     </div>
                 </article>
-                <article class="a-news-card a-reveal">
+                <article class="a-news-card a-reveal" data-reveal="up" data-delay="200">
                     <div class="a-news-img">
                         <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=600&q=80" alt="Sostenibilidad">
                     </div>
@@ -302,16 +303,16 @@
     <section class="a-contact" id="contacto">
         <div class="a-container">
             <div class="a-contact-grid">
-                <div class="a-contact-left a-reveal">
-                    <h2 class="a-heading-md">Hablemos de<br>tu proyecto.</h2>
-                    <p>Nuestro equipo de expertos te acompaña en cada etapa.</p>
+                <div class="a-contact-left a-reveal" data-reveal="up">
+                    <h2 class="a-heading-md" data-reveal="up">Hablemos de<br>tu proyecto.</h2>
+                    <p data-reveal="up" data-delay="200">Nuestro equipo de expertos te acompaña en cada etapa.</p>
                     <div class="a-contact-info">
                         <a href="tel:+576017077060"><i class="ri-phone-line"></i> (601) 307 7060</a>
                         <a href="mailto:info@eternit.com.co"><i class="ri-mail-line"></i> info@eternit.com.co</a>
                         <span><i class="ri-map-pin-line"></i> Bogotá, Colombia</span>
                     </div>
                 </div>
-                <form class="a-contact-form a-reveal">
+                <form class="a-contact-form a-reveal" data-reveal="up" data-delay="200">
                     <input type="text" placeholder="Nombre" required>
                     <input type="email" placeholder="Email" required>
                     <input type="tel" placeholder="Teléfono">
@@ -324,7 +325,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="a-footer">
+    <footer class="a-footer" data-reveal="fade">
         <div class="a-container">
             <div class="a-footer-top">
                 <div class="a-footer-brand">
@@ -371,6 +372,7 @@
         </div>
     </footer>
 
+    <script src="animations.js"></script>
     <script>
     document.addEventListener('DOMContentLoaded', () => {
         // Nav scroll
