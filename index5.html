@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eternit Colombia — Construimos el futuro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="c-topbar" id="cTopbar">
+    <div class="c-container">
+      <div class="c-topbar-left">
+        <a href="tel:6013077060"><i class="ri-phone-line"></i> (601) 307 7060</a>
+        <a href="mailto:info@eternit.com.co"><i class="ri-mail-line"></i> info@eternit.com.co</a>
+      </div>
+      <div class="c-topbar-right">
+        <a href="#">Distribuidores</a>
+        <a href="#">Asesor virtual</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAV ===== -->
+  <nav class="c-nav" id="cNav">
+    <div class="c-container c-nav-inner">
+      <a href="#" class="c-nav-logo"><img src="logo.png" alt="Eternit"></a>
+
+      <button class="c-nav-toggle" id="cToggle" aria-label="Menu"><i class="ri-menu-line"></i></button>
+
+      <div class="c-nav-links" id="cLinks">
+        <div class="c-dropdown">
+          <span class="c-dropdown-toggle">Inicio <i class="ri-arrow-down-s-line"></i></span>
+          <div class="c-dropdown-menu">
+            <a href="index.html">Home 1</a>
+            <a href="index2.html">Home 2</a>
+            <a href="index3.html">Home 3</a>
+            <a href="index4.html">Home 4</a>
+            <a href="index5.html" style="color:var(--c-accent)!important;font-weight:600">Home 5</a>
+          </div>
+        </div>
+        <div class="c-dropdown">
+          <span class="c-dropdown-toggle">Soluciones <i class="ri-arrow-down-s-line"></i></span>
+          <div class="c-dropdown-menu">
+            <a href="cubiertas.html">Cubiertas</a>
+            <a href="#">Construcción</a>
+            <a href="#">Agua</a>
+            <a href="#">Acabados</a>
+          </div>
+        </div>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#sostenibilidad">Sostenibilidad</a>
+        <a href="#noticias">Noticias</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#contacto" class="c-nav-cta">Cotizar</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO — Video Background ===== -->
+  <section class="c-hero">
+    <video class="c-hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400">
+      <source src="https://assets.mixkit.co/videos/4684/4684-720.mp4" type="video/mp4">
+    </video>
+    <!-- Fallback: if video fails, poster image is shown via CSS -->
+    <img class="c-hero-fallback" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400" alt="" aria-hidden="true">
+    <div class="c-hero-overlay"></div>
+
+    <div class="c-container c-hero-content">
+      <span class="c-hero-tag" data-reveal="up">Innovación en construcción</span>
+      <h1 class="c-hero-title" data-split>Construimos el futuro de Colombia</h1>
+      <p class="c-hero-sub" data-reveal="up" data-delay="200">Más de 80 años liderando soluciones innovadoras y sostenibles para la industria de la construcción. Calidad que protege millones de hogares.</p>
+      <div class="c-hero-actions" data-reveal="up" data-delay="400">
+        <a href="#" class="c-btn-primary" data-magnetic>Explorar soluciones <i class="ri-arrow-right-line"></i></a>
+        <a href="#" class="c-btn-outline" data-magnetic>Ver catálogo <i class="ri-play-circle-line"></i></a>
+      </div>
+    </div>
+
+    <div class="c-hero-scroll">
+      <span></span>
+      Scroll
+    </div>
+
+    <button class="c-hero-mute" id="cMute" aria-label="Activar sonido">
+      <i class="ri-volume-mute-line"></i>
+    </button>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="c-marquee" data-reveal="fade">
+    <div class="c-marquee-track">
+      <span>Fibrocemento</span>
+      <span>•</span>
+      <span>Cubiertas</span>
+      <span>•</span>
+      <span>Tanques de Agua</span>
+      <span>•</span>
+      <span>Construcción Liviana</span>
+      <span>•</span>
+      <span>Cielo Raso</span>
+      <span>•</span>
+      <span>Soluciones Sostenibles</span>
+      <span>•</span>
+      <span>80+ Años</span>
+      <span>•</span>
+      <span>Fibrocemento</span>
+      <span>•</span>
+      <span>Cubiertas</span>
+      <span>•</span>
+      <span>Tanques de Agua</span>
+      <span>•</span>
+      <span>Construcción Liviana</span>
+      <span>•</span>
+      <span>Cielo Raso</span>
+      <span>•</span>
+      <span>Soluciones Sostenibles</span>
+      <span>•</span>
+      <span>80+ Años</span>
+      <span>•</span>
+    </div>
+  </div>
+
+  <!-- ===== PRODUCT CARDS ===== -->
+  <section class="c-cards">
+    <div class="c-container">
+      <div class="c-cards-head">
+        <span class="c-section-label" data-reveal="up">Soluciones integrales</span>
+        <h2 class="c-section-title" data-reveal="up" data-delay="100">Todo lo que necesitas<br>para construir.</h2>
+        <p class="c-section-sub" data-reveal="up" data-delay="200">Portafolio completo de soluciones para cada etapa de tu proyecto.</p>
+      </div>
+
+      <div class="c-cards-grid" data-stagger>
+        <!-- Card 1: Cubiertas (large, dark) -->
+        <div class="c-card c-card--dark c-card--span2" data-tilt>
+          <div class="c-card-bg" style="background-image:url('https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800')"></div>
+          <div class="c-card-body">
+            <span class="c-card-tag">Solución estrella</span>
+            <h3 class="c-card-title">Cubiertas</h3>
+            <p class="c-card-desc">Tejas de fibrocemento para protección y diseño en cada proyecto.</p>
+            <a href="cubiertas.html" class="c-card-link">Explorar <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 2: Construcción (small, dark) -->
+        <div class="c-card c-card--dark" data-tilt>
+          <div class="c-card-bg" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800')"></div>
+          <div class="c-card-body">
+            <h3 class="c-card-title">Construcción</h3>
+            <p class="c-card-desc">Placas y sistemas constructivos eficientes.</p>
+            <a href="#" class="c-card-link">Explorar <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 3: Tanques (small, light) -->
+        <div class="c-card c-card--light" data-tilt>
+          <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600" alt="Tanques" class="c-card-img">
+          <div class="c-card-body">
+            <span class="c-card-tag" style="color:var(--c-blue)">Soluciones de Agua</span>
+            <h3 class="c-card-title" style="color:var(--c-blue)">Tanques Eternit</h3>
+            <p class="c-card-desc">Almacenamiento seguro con calidad certificada.</p>
+            <a href="#" class="c-card-link" style="color:var(--c-blue)">Conocer más <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 4: Acabados (small, light beige) -->
+        <div class="c-card c-card--light" style="background:#f5f0eb" data-tilt>
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800" alt="Acabados" class="c-card-img">
+          <div class="c-card-body">
+            <h3 class="c-card-title">Acabados</h3>
+            <p class="c-card-desc">Cielo raso y acabados arquitectónicos con diseño.</p>
+            <a href="#" class="c-card-link">Explorar <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 5: Solar (small, dark gradient) -->
+        <div class="c-card c-card--dark" style="background:linear-gradient(135deg,#1a1a2e,#16213e)" data-tilt>
+          <div class="c-card-body">
+            <h3 class="c-card-title">Solución Solar</h3>
+            <p class="c-card-desc">Cubiertas inteligentes con energía fotovoltaica.</p>
+            <a href="#" class="c-card-link">Próximamente <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATEMENT ===== -->
+  <section class="c-statement" id="nosotros">
+    <div class="c-container">
+      <p class="c-statement-text" data-split>Desde <strong>1942</strong>, Eternit ha sido sinónimo de <strong>calidad</strong> y <strong>confianza</strong> en la industria de la construcción colombiana. Nuestros productos protegen <strong>millones de hogares</strong>.</p>
+    </div>
+  </section>
+
+  <!-- ===== NUMBERS ===== -->
+  <section class="c-numbers">
+    <div class="c-container">
+      <div class="c-numbers-grid" data-reveal="fade">
+        <div>
+          <div class="c-number-val" data-counter="+80">+80</div>
+          <div class="c-number-label">Años de trayectoria</div>
+        </div>
+        <div>
+          <div class="c-number-val" data-counter="500+">500+</div>
+          <div class="c-number-label">Productos en portafolio</div>
+        </div>
+        <div>
+          <div class="c-number-val" data-counter="3">3</div>
+          <div class="c-number-label">Plantas de manufactura</div>
+        </div>
+        <div>
+          <div class="c-number-val" data-counter="100%">100%</div>
+          <div class="c-number-label">Cobertura nacional</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO FEATURE ===== -->
+  <section class="c-video-section">
+    <div class="c-container">
+      <span class="c-section-label" style="color:rgba(255,255,255,.5)" data-reveal="up">Conócenos</span>
+      <h2 class="c-section-title" style="color:#fff" data-reveal="up" data-delay="100">La historia detrás de cada teja.</h2>
+    </div>
+    <div class="c-video-wrapper" data-reveal="zoom">
+      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200" alt="Video Eternit" id="cVideoThumb">
+      <div class="c-video-play" id="cVideoPlay">
+        <i class="ri-play-circle-fill"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES GRID ===== -->
+  <section class="c-services">
+    <div class="c-container">
+      <div class="c-services-head">
+        <span class="c-section-label" data-reveal="up">Catálogo</span>
+        <h2 class="c-section-title" data-reveal="up" data-delay="100">Todo en un solo lugar.</h2>
+      </div>
+
+      <div class="c-services-grid" data-stagger>
+        <!-- Cubiertas -->
+        <div class="c-service-tile" style="background:#c0392b" data-tilt>
+          <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800" alt="Teja Ondulada P7">
+          <span class="c-service-cat">Cubiertas</span>
+          <span class="c-service-name">Teja Ondulada P7</span>
+          <a href="#" class="c-service-link">Explorar <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="c-service-tile" style="background:#e74c3c" data-tilt>
+          <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800" alt="Teja Colonial">
+          <span class="c-service-cat">Cubiertas</span>
+          <span class="c-service-name">Teja Colonial</span>
+          <a href="#" class="c-service-link">Explorar <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="c-service-tile" style="background:#d35400" data-tilt>
+          <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200" alt="Teja Sevillana">
+          <span class="c-service-cat">Cubiertas</span>
+          <span class="c-service-name">Teja Sevillana</span>
+          <a href="#" class="c-service-link">Explorar <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+        <!-- Agua -->
+        <div class="c-service-tile" style="background:#0066b3" data-tilt>
+          <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600" alt="Tanque Azul 500L">
+          <span class="c-service-cat">Agua</span>
+          <span class="c-service-name">Tanque Azul 500L</span>
+          <a href="#" class="c-service-link">Explorar <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="c-service-tile" style="background:#2980b9" data-tilt>
+          <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600" alt="Tanque 1000L">
+          <span class="c-service-cat">Agua</span>
+          <span class="c-service-name">Tanque 1000L</span>
+          <a href="#" class="c-service-link">Explorar <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="c-service-tile" style="background:#1a5276" data-tilt>
+          <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=600" alt="Tanque 2000L">
+          <span class="c-service-cat">Agua</span>
+          <span class="c-service-name">Tanque 2000L</span>
+          <a href="#" class="c-service-link">Explorar <i class="ri-arrow-right-line"></i></a>
+        </div>
+
+        <!-- Construcción -->
+        <div class="c-service-tile" style="background:#2c3e50" data-tilt>
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800" alt="Placa Plana">
+          <span class="c-service-cat">Construcción</span>
+          <span class="c-service-name">Placa Plana</span>
+          <a href="#" class="c-service-link">Explorar <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="c-service-tile" style="background:#34495e" data-tilt>
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800" alt="Cielo Raso">
+          <span class="c-service-cat">Construcción</span>
+          <span class="c-service-name">Cielo Raso</span>
+          <a href="#" class="c-service-link">Explorar <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="c-service-tile" style="background:#1c2833" data-tilt>
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800" alt="Superboard">
+          <span class="c-service-cat">Construcción</span>
+          <span class="c-service-name">Superboard</span>
+          <a href="#" class="c-service-link">Explorar <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SUSTAINABILITY ===== -->
+  <section class="c-sustain" id="sostenibilidad">
+    <div class="c-container">
+      <div class="c-sustain-grid">
+        <div data-reveal="left">
+          <span class="c-sustain-label">Sostenibilidad</span>
+          <h2 class="c-sustain-title">Compromiso real con el planeta.</h2>
+          <ul class="c-sustain-list">
+            <li><i class="ri-check-line"></i> Reducción del 40% en huella de carbono</li>
+            <li><i class="ri-check-line"></i> 100% libre de asbesto desde 2007</li>
+            <li><i class="ri-check-line"></i> Economía circular en procesos productivos</li>
+            <li><i class="ri-check-line"></i> Proyecto Hydros — agua para comunidades</li>
+          </ul>
+          <a href="#" class="c-btn-dark">Ver reporte <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="c-sustain-img" data-reveal="right">
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600" alt="Sostenibilidad Eternit">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWS ===== -->
+  <section class="c-news" id="noticias">
+    <div class="c-container">
+      <div class="c-news-head">
+        <div>
+          <span class="c-section-label" data-reveal="up">Actualidad</span>
+          <h2 class="c-section-title" data-reveal="up" data-delay="100">Noticias</h2>
+        </div>
+        <a href="#" class="c-btn-dark" data-reveal="up" data-delay="200">Ver todas <i class="ri-arrow-right-line"></i></a>
+      </div>
+
+      <div class="c-news-grid">
+        <article class="c-news-card" data-reveal="up" data-delay="100" data-img-zoom>
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400" alt="Certificación QAI">
+          <div class="c-news-card-body">
+            <span class="c-news-date">Febrero 2026</span>
+            <h3 class="c-news-card-title">Certificación QAI para placas Eterboard</h3>
+            <a href="#" class="c-news-link">Leer <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </article>
+        <article class="c-news-card" data-reveal="up" data-delay="200" data-img-zoom>
+          <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=400" alt="Tanque traslúcido">
+          <div class="c-news-card-body">
+            <span class="c-news-date">Enero 2026</span>
+            <h3 class="c-news-card-title">Nuevo tanque traslúcido Eternit</h3>
+            <a href="#" class="c-news-link">Leer <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </article>
+        <article class="c-news-card" data-reveal="up" data-delay="300" data-img-zoom>
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=400" alt="Reporte sostenibilidad">
+          <div class="c-news-card-body">
+            <span class="c-news-date">Diciembre 2025</span>
+            <h3 class="c-news-card-title">Reporte de sostenibilidad 2025</h3>
+            <a href="#" class="c-news-link">Leer <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="c-contact" id="contacto">
+    <div class="c-container">
+      <div class="c-contact-grid" data-reveal="up">
+        <div>
+          <h2 class="c-contact-title">Hablemos de tu proyecto.</h2>
+          <p class="c-contact-sub">Nuestro equipo de expertos te acompaña en cada etapa.</p>
+          <div class="c-contact-details">
+            <div class="c-contact-item"><i class="ri-phone-line"></i> (601) 307 7060</div>
+            <div class="c-contact-item"><i class="ri-mail-line"></i> info@eternit.com.co</div>
+            <div class="c-contact-item"><i class="ri-map-pin-line"></i> Bogotá, Colombia</div>
+          </div>
+        </div>
+        <form class="c-form" onsubmit="return false">
+          <div class="c-form-row">
+            <input type="text" placeholder="Nombre completo">
+            <input type="email" placeholder="Correo electrónico">
+          </div>
+          <div class="c-form-row">
+            <input type="tel" placeholder="Teléfono">
+            <select>
+              <option disabled selected>Solución de interés</option>
+              <option>Cubiertas</option>
+              <option>Construcción</option>
+              <option>Soluciones de Agua</option>
+              <option>Acabados</option>
+            </select>
+          </div>
+          <textarea placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+          <button type="submit" class="c-form-submit">Enviar consulta</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="c-footer" data-reveal="fade">
+    <div class="c-container">
+      <div class="c-footer-grid">
+        <div>
+          <img src="logo.png" alt="Eternit" class="c-footer-logo">
+          <p class="c-footer-desc">Más de 80 años construyendo el futuro de Colombia con soluciones innovadoras en fibrocemento.</p>
+          <div class="c-footer-social">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="c-footer-heading">Soluciones</h4>
+          <div class="c-footer-links">
+            <a href="cubiertas.html">Cubiertas</a>
+            <a href="#">Construcción</a>
+            <a href="#">Soluciones de Agua</a>
+            <a href="#">Acabados</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="c-footer-heading">Empresa</h4>
+          <div class="c-footer-links">
+            <a href="#">Nosotros</a>
+            <a href="#">Sostenibilidad</a>
+            <a href="#">Distribuidores</a>
+            <a href="#">Trabaja con nosotros</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="c-footer-heading">Soporte</h4>
+          <div class="c-footer-links">
+            <a href="#">Centro de ayuda</a>
+            <a href="#">Documentación técnica</a>
+            <a href="#">Garantías</a>
+            <a href="#">Contacto</a>
+          </div>
+        </div>
+      </div>
+      <div class="c-footer-bottom">&copy; 2026 Eternit Colombia S.A. — Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <script src="animations.js"></script>
+  <script>
+    /* --- Nav scroll behaviour --- */
+    const nav = document.getElementById('cNav');
+    const topbar = document.getElementById('cTopbar');
+    let lastY = 0;
+
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      nav.classList.toggle('scrolled', y > 60);
+      if (topbar) topbar.classList.toggle('hidden', y > 30);
+      lastY = y;
+    }, { passive: true });
+
+    /* --- Mobile menu --- */
+    document.getElementById('cToggle').addEventListener('click', () => {
+      document.getElementById('cLinks').classList.toggle('open');
+    });
+
+    /* --- Hero video: detect play / fallback --- */
+    const heroVideo = document.querySelector('.c-hero-video');
+    const muteBtn = document.getElementById('cMute');
+    const heroSection = document.querySelector('.c-hero');
+
+    if (heroVideo) {
+      heroVideo.addEventListener('playing', () => {
+        heroSection.classList.add('video-playing');
+      });
+    }
+
+    if (muteBtn && heroVideo) {
+      muteBtn.addEventListener('click', () => {
+        heroVideo.muted = !heroVideo.muted;
+        muteBtn.querySelector('i').className = heroVideo.muted
+          ? 'ri-volume-mute-line'
+          : 'ri-volume-up-line';
+      });
+    }
+
+    /* --- Video section play --- */
+    const videoPlay = document.getElementById('cVideoPlay');
+    const videoThumb = document.getElementById('cVideoThumb');
+
+    if (videoPlay) {
+      videoPlay.addEventListener('click', () => {
+        const wrapper = videoPlay.parentElement;
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1';
+        iframe.style.cssText = 'width:100%;height:100%;border:none;position:absolute;inset:0';
+        iframe.allow = 'autoplay; encrypted-media';
+        iframe.allowFullscreen = true;
+        wrapper.innerHTML = '';
+        wrapper.appendChild(iframe);
+      });
+    }
+  </script>
+</body>
+</html>
