@@ -131,6 +131,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 
 .c-dropdown-menu a {
   display: block;
+  white-space: nowrap;
   padding: 10px 14px;
   font-size: .84rem;
   color: var(--c-black) !important;
